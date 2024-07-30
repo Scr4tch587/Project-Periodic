@@ -16,7 +16,7 @@ hero_trail_cooldown = 30 * (1 / 60);
 // Function for the shooting weapon.
 hero_shoot = function()
 {
-	if (mouse_check_button_pressed(mb_right))
+	if (mouse_check_button_pressed(mb_left))
 	{
 		if (nearest_distance < 1000)
 		{
