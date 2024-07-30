@@ -147,9 +147,6 @@ if (mouse_over)
 	
 			// Destroys reroll button.
 			with(obj_button_reroll) instance_destroy();
-	
-			// Plays music sound effect.
-			audio_play_sound(snd_music_game, 0, 1, 1.0, undefined, 1.0);
 		}
 	}
 }
