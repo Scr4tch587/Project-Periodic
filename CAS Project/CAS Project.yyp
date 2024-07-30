@@ -178,6 +178,7 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
+    {"id":{"name":"Sprite54","path":"sprites/Sprite54/Sprite54.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
