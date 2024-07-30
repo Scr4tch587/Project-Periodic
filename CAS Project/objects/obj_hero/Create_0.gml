@@ -16,25 +16,25 @@ hero_trail_cooldown = 30 * (1 / 60);
 // Function for the shooting weapon.
 hero_shoot = function()
 {
-	// If the nearest enemy is within 1000 pixels...
-	if (nearest_distance < 1000)
+	if (mouse_check_button_pressed(mb_right))
 	{
-		// Reset the cooldown for this weapon.
-		hero_shoot_cooldown = max(global.shooting[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if (global.shooting[? "unlocked"])
+		if (nearest_distance < 1000)
 		{
-			// Execute the function to handle this weapon.
-			shooting_attack();
+			hero_shoot_cooldown = max(global.shooting[? "attack_speed"], 1) * (1 / 60);
+			if (global.shooting[? "unlocked"])
+			{
+				// Execute the function to handle this weapon.
+				shooting_attack();
+			}
 		}
 	}
+
 	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// Set the cooldown to test again next frame.
-		hero_shoot_cooldown = 1 * (1 / 60);
-	}
+		else
+		{
+			// Set the cooldown to test again next frame.
+			hero_shoot_cooldown = 1 * (1 / 60);
+		}
 }
 
 // Function for the swiping weapon
