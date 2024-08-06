@@ -29,7 +29,7 @@ function shooting_attack()
 				direction = _direction + _angle;
 			
 				// Set speed of the bullet.
-				speed = 15;
+				speed = 8;
 			
 				// Rotate the bullet to face it's moving direction.
 				image_angle = direction;
