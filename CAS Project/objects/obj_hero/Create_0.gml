@@ -40,49 +40,47 @@ hero_shoot = function()
 // Function for the swiping weapon
 hero_swipe = function()
 {
-	// If the nearest enemy is within 250 pixels...
-	if (nearest_distance < 250)
-	{
-		// Reset the cooldown for this weapon.
-		hero_swipe_cooldown = max(global.swipe[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if (global.swipe[? "unlocked"])
+	if (mouse_check_button_pressed(mb_right))
+	{	
+		// If the nearest enemy is within 250 pixels...
+		if (nearest_distance < 250)
 		{
+			// Reset the cooldown for this weapon.
+			hero_swipe_cooldown = max(global.swipe[? "attack_speed"], 1) * (1 / 60);
+
 			// Execute the function that handles this weapon.
 			swipe_attack();
 		}
-	}
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// Set the cooldown to test again next frame.
-		hero_swipe_cooldown = 1 * (1 / 60);
+		// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
+		else
+		{
+			// Set the cooldown to test again next frame.
+			hero_swipe_cooldown = 1 * (1 / 60);
+		}
 	}
 }
 
 // Function for the trail weapon
 hero_trail = function()
 {
-	// If the nearest enemy is within 300 pixels...
-	if(nearest_distance < 300)
+	if (keyboard_check_pressed(vk_space))
 	{
-		// Reset the cooldown for this weapon.
-		hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);
-
-		// If this weapon is unlocked...
-		if(global.trail[? "unlocked"])
+		// If the nearest enemy is within 300 pixels...
+		if(nearest_distance < 300)
 		{
+			// Reset the cooldown for this weapon.
+			hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);
+
 			// Execute the function that handles the weapon.
 			attack_trail();
 		}
-	}
 
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-	else
-	{
-		// So set the cooldown to test again next frame.
-		hero_trail_cooldown = 1 * (1 / 60);
+		// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
+		else
+		{
+			// So set the cooldown to test again next frame.
+			hero_trail_cooldown = 1 * (1 / 60);
+		}
 	}
 }
 
