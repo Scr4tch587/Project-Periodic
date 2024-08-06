@@ -40,7 +40,7 @@ if (nearest_enemy)
 }
 
 // Reduce cooldown timer for attacks.
-hero_shoot_cooldown -= delta_time * 0.000001;
+hero_shoot_cooldown -= delta_time * 0.001;
 hero_swipe_cooldown -= delta_time * 0.000001;
 hero_trail_cooldown -= delta_time * 0.000001;
 
@@ -48,6 +48,7 @@ hero_trail_cooldown -= delta_time * 0.000001;
 if (hero_shoot_cooldown <= 0)
 {
 	// Call function.
+	hero_shoot();
 	hero_shoot();	
 }
 
