@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"floor_decoration_1",
+  "%Name":"floor_decoration_2",
   "bboxMode":0,
   "bbox_bottom":255,
   "bbox_left":0,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"ae97e2dc-b986-4ebe-9535-f472afb238c2","blendMode":0,"displayName":"default","isLocked":false,"name":"ae97e2dc-b986-4ebe-9535-f472afb238c2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"floor_decoration_1",
+  "name":"floor_decoration_2",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f905efd2-cebc-4846-9f94-c4257eea1486","path":"sprites/floor_decoration_1/floor_decoration_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f905efd2-cebc-4846-9f94-c4257eea1486","path":"sprites/floor_decoration_2/floor_decoration_2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a260aa75-eaec-4d85-a897-292154010cd1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
