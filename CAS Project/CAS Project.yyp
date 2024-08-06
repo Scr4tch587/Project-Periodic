@@ -39,6 +39,7 @@
     {"$GMFolder":"","%Name":"UI","folderPath":"folders/Sounds/UI.yy","name":"UI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Background","folderPath":"folders/Sprites/Background.yy","name":"Background","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Battle Backgrounds","folderPath":"folders/Sprites/Background/Battle Backgrounds.yy","name":"Battle Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Collectables","folderPath":"folders/Sprites/Collectables.yy","name":"Collectables","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Sprites/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Pigun","folderPath":"folders/Sprites/Enemies/Pigun.yy","name":"Pigun","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -96,7 +97,6 @@
     {"id":{"name":"obj_upgrade","path":"objects/obj_upgrade/obj_upgrade.yy",},},
     {"id":{"name":"Wall","path":"objects/Wall/Wall.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
-    {"id":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"attack_trail","path":"scripts/attack_trail/attack_trail.yy",},},
     {"id":{"name":"get_upgrades","path":"scripts/get_upgrades/get_upgrades.yy",},},
@@ -128,6 +128,7 @@
     {"id":{"name":"snd_ui_select","path":"sounds/snd_ui_select/snd_ui_select.yy",},},
     {"id":{"name":"snd_win","path":"sounds/snd_win/snd_win.yy",},},
     {"id":{"name":"floor_decoration_1","path":"sprites/floor_decoration_1/floor_decoration_1.yy",},},
+    {"id":{"name":"Hallway","path":"sprites/Hallway/Hallway.yy",},},
     {"id":{"name":"spr_arcing_attack_big","path":"sprites/spr_arcing_attack_big/spr_arcing_attack_big.yy",},},
     {"id":{"name":"spr_arcing_attack_small","path":"sprites/spr_arcing_attack_small/spr_arcing_attack_small.yy",},},
     {"id":{"name":"spr_arcing","path":"sprites/spr_arcing/spr_arcing.yy",},},
@@ -189,7 +190,6 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
-    {"roomId":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
