@@ -3,7 +3,7 @@
 // Set depth to a high negative number
 // to make sure it's drawn on top of
 // other things.
-depth = -1;
+depth = 100;
 
 image_xscale = 2;
 image_yscale = 2;
