@@ -2,14 +2,6 @@
 // If hitpoints are over zero...
 if (hitpoints > 0)
 {
-	// Choose a random shooting sound effect.
-	var _sound = choose(snd_lightning_impact_1, snd_lightning_impact_2);
-
-	// Play the chosen sound.
-	audio_play_sound(_sound, 0, 0, 1.0, undefined, 1.0);
-
-	// Destroy the other instance (the bullet)
-	with (other) instance_destroy();
 
 	// Set the healthbar timer to 60.
 	// Causing the healthbar to show for 60 game steps.
@@ -35,7 +27,3 @@ if (hitpoints > 0)
 		instance_destroy();
 	}
 }
-
-instance_create_layer(x, y, "Instances", obj_hero_flaskaoe);
-
-

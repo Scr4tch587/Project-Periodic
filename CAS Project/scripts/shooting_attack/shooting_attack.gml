@@ -21,7 +21,6 @@ function shooting_attack()
 		{
 			// Create a bullet and assign it to temp variable _bullet.
 			var _bullet = instance_create_layer(x, y, "Instances", obj_hero_bullet);
-		
 			// Change values of the bullet...
 			with (_bullet) 
 			{
