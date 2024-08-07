@@ -49,7 +49,7 @@ if (hero_shoot_cooldown <= 0)
 {
 	// Call function.
 	hero_shoot();
-	hero_shoot();
+	hero_shoot();	
 }
 
 // Check if function cooldown is finished.
@@ -65,3 +65,5 @@ if (hero_trail_cooldown <= 0)
 	// Call function.
 	hero_trail();	
 }
+
+switch_weapon();

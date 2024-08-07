@@ -17,30 +17,6 @@ function weapon_trail_reset()
 // Define function to retrieve upgrades for the trail weapon.
 function weapon_trail_upgrades(_upgrade_list) 
 {
-	// Get wether the trail weapon is unlocked.
-	var _unlocked = ds_map_find_value(global.trail, "unlocked");
-
-	// If it is NOT unlocked...
-	if (!_unlocked)
-	{
-		// Create map to store upgrade.
-		var _map = ds_map_create();
-	
-		// Upgrade to unlock the trail weapon.
-		ds_map_replace(_map, "description", "Large but slow\narea of effect\nattack around\nthe player");
-		ds_map_replace(_map, "title", "UNLOCK");
-		ds_map_replace(_map, "object", global.trail);
-		ds_map_replace(_map, "key", "unlocked");
-		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", spr_trail_attack_big);
-		ds_map_replace(_map, "weapon_name", "TRAIL");
-	
-		// Add upgrade to the list.
-		ds_list_add(_upgrade_list, _map);
-		
-		// Exits the event.
-		exit;
-	}
 
 	// Get the current trail weapon attack speed.
 	var _attack_speed = ds_map_find_value(global.trail, "attack_speed");

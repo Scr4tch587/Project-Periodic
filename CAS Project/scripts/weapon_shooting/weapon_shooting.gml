@@ -19,30 +19,6 @@ function weapon_shooting_reset()
 // weapon upgrades.
 function weapon_shooting_upgrades(_upgrade_list) 
 {
-	// Get wether the shooting weapon is unlocked.
-	var _unlocked = ds_map_find_value(global.shooting, "unlocked");
-
-	// If the shooting weapon is NOT unlocked...
-	if (!_unlocked)
-	{
-		// Create map to strore the upgrade.
-		var _map = ds_map_create();
-	
-		// Upgrade to unlock shooting weapon.
-		ds_map_replace(_map, "description", "Unlock Shooting\nWeapon");
-		ds_map_replace(_map, "title", "UNLOCK");
-		ds_map_replace(_map, "object", global.shooting);
-		ds_map_replace(_map, "key", "unlocked");
-		ds_map_replace(_map, "amount", 1);
-		ds_map_replace(_map, "icon", spr_shooting_attack_big);
-		ds_map_replace(_map, "weapon_name", "PROJECTILE");
-	
-		// Add upgrade to list.
-		ds_list_add(_upgrade_list, _map);
-	
-		// Exits the event.
-		exit;
-	}
 
 	// Get current shooting weapon attack speed.
 	var _attack_speed = ds_map_find_value(global.shooting, "attack_speed");
