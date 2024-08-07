@@ -14,3 +14,6 @@ if(hspeed != 0)
 	image_xscale = -sign(hspeed);
 	image_yscale = 1;
 }
+
+//adjust cooldown
+_cooldown = _cooldown + 1;

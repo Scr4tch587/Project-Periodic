@@ -1,8 +1,8 @@
 
 // If hitpoints are over zero...
-if (hitpoints > 0)
+if (hitpoints > 0 and _cooldown >= 60)
 {
-
+	_cooldown = 0
 	// Set the healthbar timer to 60.
 	// Causing the healthbar to show for 60 game steps.
 	show_healthbar = 60;

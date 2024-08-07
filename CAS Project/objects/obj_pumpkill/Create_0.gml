@@ -2,7 +2,7 @@
 event_inherited();
 
 // Set speed for this enemy type.
-speed = 8;
+speed = 4;
 
 // Set animation speed.
 image_speed = 1;
