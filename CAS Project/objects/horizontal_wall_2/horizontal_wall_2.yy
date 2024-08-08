@@ -26,7 +26,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"wall_horizontal_2",
     "path":"sprites/wall_horizontal_2/wall_horizontal_2.yy",
