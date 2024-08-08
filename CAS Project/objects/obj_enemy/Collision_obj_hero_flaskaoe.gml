@@ -1,6 +1,6 @@
 
 // If hitpoints are over zero...
-if (hitpoints > 0 and _cooldown >= 60)
+if (hitpoints > 0 and _cooldown >= 60 and global.paused == false)
 {
 	_cooldown = 0
 	// Set the healthbar timer to 60.
