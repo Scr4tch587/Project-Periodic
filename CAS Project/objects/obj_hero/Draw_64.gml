@@ -37,6 +37,15 @@ if (instance_exists(obj_pause_button))
 	}
 }
 
+// Draw the back of the health bar.
+draw_sprite_ext(spr_healthbar_back, 0, 200, 200, 1120 / 65, 1, 0, c_white, 1);
+
+// Get how much the health bar should be filled.
+var _fill = (hitpoints / hitpoints_max)
+
+// Draw the health bar filling.
+draw_sprite_ext(spr_healthbar_fill, 0, 202.5, 203, (1160 / 54) * _fill, 1, 0, c_white, 1);
+
 // If the left mouse button is NOT pressed...
 if (!mouse_check_button(mb_left))
 {
