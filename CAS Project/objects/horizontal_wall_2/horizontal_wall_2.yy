@@ -6,8 +6,8 @@
   "name":"horizontal_wall_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lobby",
-    "path":"folders/Objects/Lobby.yy",
+    "name":"Environment",
+    "path":"folders/Objects/Environment.yy",
   },
   "parentObjectId":null,
   "persistent":false,

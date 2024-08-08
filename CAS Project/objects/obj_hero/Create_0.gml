@@ -9,7 +9,7 @@ nearest_enemy = undefined;
 nearest_distance = 1000;
 
 // Cooldowns for the weapon attacks (from frames to seconds).
-_shootcd = 0;
+_shootcd = 240;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);

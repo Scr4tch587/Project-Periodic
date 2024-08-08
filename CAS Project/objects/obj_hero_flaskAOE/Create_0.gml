@@ -7,5 +7,5 @@ depth = 100;
 
 image_xscale = 2;
 image_yscale = 2;
-
-alarm[0] = fps * 5; // Timer set for 5 seconds
+speed = 0;
+lifetime = 0 //lifetime variable, when it reaches 300, puddle deletes itself
