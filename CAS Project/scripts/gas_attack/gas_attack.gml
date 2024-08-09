@@ -2,7 +2,7 @@
 function gas_attack(){
 	var _xlocation = mouse_x;
 	var _ylocation = mouse_y;
-	var _gasspeed = 8;
+	var _gasspeed = 16;
 	var _highestpoint = 100; //how high the arc goes
 	var _distanceneeded = point_distance(x, y, mouse_x, mouse_y);
 	var _x_distance = mouse_x - x;

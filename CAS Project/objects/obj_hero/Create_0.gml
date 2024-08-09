@@ -70,11 +70,11 @@ hero_gas = function()
 {
 	if (mouse_check_button_pressed(mb_left))
 	{
-		// If the nearest enemy is within 300 pixels...
-		if (nearest_distance < 1000)
-		{
-			gas_attack();
-		}
+			if (global.trail[? "unlocked"])
+			{
+				// Execute the function to handle this weapon.
+				gas_attack();
+			}
 	}
 }
 
