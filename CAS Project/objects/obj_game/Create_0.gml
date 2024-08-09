@@ -104,13 +104,8 @@ spawn_enemy = function()
 		var _x = round(random_range(0, _room_width - 1));
 		var _y = round(random_range(0, _room_height - 1));
 
-		// Optionally, you might want to ensure the position is not on the edge of the room
-		// This prevents placing objects exactly at the boundary
-		_x = max(1, min(_room_width - 1, _x));
-		_y = max(1, min(_room_height - 1, _y));
-
 		// Check if the position is inside a restricted area
-		if (!place_meeting(_x, _y, obj_environment) && is_inside_room(_x, _y, room_width, room_height))
+		if (instance_place(_x, _y, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
 		{
 		    break; // Valid position found, break out of the loop
 		}
