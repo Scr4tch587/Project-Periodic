@@ -66,28 +66,14 @@ hero_swipe = function()
 }
 
 // Function for the trail weapon
-hero_trail = function()
+hero_gas = function()
 {
 	if (mouse_check_button_pressed(mb_left))
 	{
 		// If the nearest enemy is within 300 pixels...
-		if (nearest_distance < 300)
+		if (nearest_distance < 1000)
 		{
-			// Reset the cooldown for this weapon.
-			hero_trail_cooldown = max(global.trail[? "attack_speed"], 1) * (1 / 60);
-
-			// Execute the function that handles the weapon.
-			if (global.trail[? "unlocked"])
-			{
-				attack_trail();
-			}
-		}
-
-		// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-		else
-		{
-			// So set the cooldown to test again next frame.
-			hero_trail_cooldown = 1 * (1 / 60);
+			gas_attack();
 		}
 	}
 }

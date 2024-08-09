@@ -48,7 +48,6 @@ hero_trail_cooldown -= delta_time * 0.000001;
 if (true)
 {
 	// Call function.
-	hero_shoot();
 	hero_shoot();	
 }
 
@@ -59,11 +58,10 @@ if (hero_swipe_cooldown <= 0)
 	hero_swipe();	
 }
 
-// Check if function cooldown is finished.
-if (hero_trail_cooldown <= 0)
+if (true)
 {
 	// Call function.
-	hero_trail();	
+	hero_gas();	
 }
 
 switch_weapon();
