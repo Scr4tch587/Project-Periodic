@@ -3,7 +3,7 @@ function gas_attack(){
 	var _xlocation = mouse_x;
 	var _ylocation = mouse_y;
 	var _gasspeed = 16;
-	var _highestpoint = 100; //how high the arc goes
+	var _highestpoint = 200; //how high the arc goes
 	var _distanceneeded = point_distance(x, y, mouse_x, mouse_y);
 	var _x_distance = mouse_x - x;
 	var _y_distance = mouse_y - y;
@@ -22,11 +22,11 @@ function gas_attack(){
 		neededvspeed = yspeed;
 		neededtime = _timeneeded
 		neededydist = _y_distance
+		neededxdist = _x_distance
 			
 		grav = 1;
 
 		vspeed = (neededydist - grav * neededtime * neededtime / 2) / neededtime;
-
 		countdown = 0;
 	}
 	
