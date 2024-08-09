@@ -106,6 +106,7 @@
     {"id":{"name":"attack_trail","path":"scripts/attack_trail/attack_trail.yy",},},
     {"id":{"name":"gas_attack","path":"scripts/gas_attack/gas_attack.yy",},},
     {"id":{"name":"get_upgrades","path":"scripts/get_upgrades/get_upgrades.yy",},},
+    {"id":{"name":"is_inside_room","path":"scripts/is_inside_room/is_inside_room.yy",},},
     {"id":{"name":"keep_in_room","path":"scripts/keep_in_room/keep_in_room.yy",},},
     {"id":{"name":"list_shuffle","path":"scripts/list_shuffle/list_shuffle.yy",},},
     {"id":{"name":"next_wave","path":"scripts/next_wave/next_wave.yy",},},

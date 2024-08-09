@@ -91,16 +91,30 @@ spawn_enemy = function()
 
 	// We want to spawn enemyes around the player.
 	// So we first get a random direction (0 to 360).
-	var _dir = random(360);
 
-	// Then we get the position 1200 pixels away
-	// from the hero on the x axis.
-	var _x = obj_hero.x + lengthdir_x(1200, _dir);
+	var _x, _y;
 
-	// Then we get the position 1200 pixels away
-	// from the hero on the y axis.
-	var _y = obj_hero.y + lengthdir_y(1200, _dir);
+	repeat(1000) // Try up to 1000 times to find a valid position
+	{
+		// Define room width and height
+		var _room_width = room_width;
+		var _room_height = room_height;
 
-	// Create an enemy at that generated positon.
+		// Generate random integer positions within the room bounds
+		var _x = round(random_range(0, _room_width - 1));
+		var _y = round(random_range(0, _room_height - 1));
+
+		// Optionally, you might want to ensure the position is not on the edge of the room
+		// This prevents placing objects exactly at the boundary
+		_x = max(1, min(_room_width - 1, _x));
+		_y = max(1, min(_room_height - 1, _y));
+
+		// Check if the position is inside a restricted area
+		if (!place_meeting(_x, _y, obj_environment) && is_inside_room(_x, _y, room_width, room_height))
+		{
+		    break; // Valid position found, break out of the loop
+		}
+	}
+	// create enemy in the position
 	instance_create_layer(_x, _y, "Instances", _enemy);
 }
