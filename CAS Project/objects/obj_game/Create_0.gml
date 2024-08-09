@@ -4,6 +4,8 @@ global.xp_goal = 10;
 
 // Set current experience.
 global.xp = 0;
+global.mana = 100;
+global.mana_max = 100;
 
 // Set the current level.
 global.level = 1;

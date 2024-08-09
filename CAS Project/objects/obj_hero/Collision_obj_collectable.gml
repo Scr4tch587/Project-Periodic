@@ -1,5 +1,5 @@
 // Increment experience.
-global.xp += 1;
+global.mana += 10;
 
 // Choose a random pickup sound effect.
 _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);

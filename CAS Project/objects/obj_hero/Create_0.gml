@@ -15,27 +15,18 @@ hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
 
 // Function for the shooting weapon.
-hero_shoot = function()
-{
-	if (mouse_check_button_pressed(mb_left) and _shootcd >= 240)
-	{
-		if (nearest_distance < 1000)
-		{
-			hero_shoot_cooldown = max(global.shooting[? "attack_speed"], 1) * (1 / 60);
-			if (global.shooting[? "unlocked"])
-			{
-				// Execute the function to handle this weapon.
-				shooting_attack();
+hero_shoot = function() {
+	if (mouse_check_button_pressed(mb_left) and _shootcd >= 240) {	
+		if (nearest_distance < 1000) {	
+			if (global.shooting[? "unlocked"]) {	
+				if (global.mana >= 5) {
+					global.mana -= 5;
+					shooting_attack(); // Execute the function to handle this weapon.
+					_shootcd = 0;
+				}
 			}
 		}
 	}
-
-	// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-		else
-		{
-			// Set the cooldown to test again next frame.
-			hero_shoot_cooldown = 1 * (1 / 60);
-		}
 }
 
 // Function for the swiping weapon
@@ -51,7 +42,7 @@ hero_swipe = function()
 
 			// Execute the function that handles this weapon.
 			if (global.swipe[? "unlocked"])
-			{
+			{	
 				// Execute the function that handles this weapon.
 				swipe_attack();
 			}
@@ -71,9 +62,12 @@ hero_gas = function()
 	if (mouse_check_button_pressed(mb_left))
 	{
 			if (global.trail[? "unlocked"])
-			{
-				// Execute the function to handle this weapon.
-				gas_attack();
+			{	
+				if (global.mana >= 5) {
+					global.mana -= 5;
+					gas_attack();
+					// Execute the function to handle this weapon.
+				}
 			}
 	}
 }

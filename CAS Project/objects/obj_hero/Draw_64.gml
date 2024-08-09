@@ -50,10 +50,10 @@ draw_sprite_ext(spr_healthbar_fill, 0, 52.5, 43, (1160 / 54) * _fill, 1, 0, c_wh
 draw_sprite_ext(spr_xpbar_back, 0, 50, 80, 7.7, 1, 0, c_white, 1);
 
 // Get how much the bar should be filled.
-_fill = min(global.xp / global.xp_goal, 1);
+_fill = min(global.mana / global.mana_max, 1);
 
 // Draw the experince bar filling.
-draw_sprite_ext(spr_xpbar_fill, 0, 57, 86.5, 10 * _fill, 1, 0, c_white, 1);
+draw_sprite_ext(spr_xpbar_fill, 0, 57, 86.5, 9.5 * _fill, 1, 0, c_white, 1);
 
 
 // Set the font.
