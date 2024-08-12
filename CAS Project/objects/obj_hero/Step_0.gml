@@ -66,4 +66,4 @@ if (true)
 switch_weapon();
 //increment cooldown to shoot variable
 _shootcd += 1
-global.mana += 0.1
+global.mana += 0.001
