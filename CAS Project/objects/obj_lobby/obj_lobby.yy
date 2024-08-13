@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_collectable",
+  "%Name":"obj_lobby",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_collectable",
+  "name":"obj_lobby",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pickups",
-    "path":"folders/Objects/Game/Pickups.yy",
+    "name":"Lobby",
+    "path":"folders/Objects/Game/Lobby.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_collectible_gen",
-    "path":"sprites/spr_collectible_gen/spr_collectible_gen.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
