@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_quit",
+  "%Name":"obj_lobby_button_quit",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,11 +9,11 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_quit",
+  "name":"obj_lobby_button_quit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Lobby",
+    "path":"folders/Objects/Game/Lobby.yy",
   },
   "parentObjectId":null,
   "persistent":false,

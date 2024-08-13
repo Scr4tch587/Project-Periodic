@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"attack_trail",
   "isCompatibility":false,
   "isDnD":false,

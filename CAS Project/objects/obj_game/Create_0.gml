@@ -1,6 +1,7 @@
 
 // Set the experience goal to reach the next level.
-global.xp_goal = 10;
+global.xp_goal = 20;
+global.num_enemies = 20;
 
 // Set current experience.
 global.xp = 0;
@@ -47,7 +48,7 @@ spawn_enemy = function()
 
 	// If an instance of obj_upgrade exists then
 	// that means we are on the upgrade screen...
-	if (instance_exists(obj_upgrade))
+	if (instance_exists(obj_upgrade_screen))
 	{
 		// Exit event, stopping any enemies from spawning.
 		exit;

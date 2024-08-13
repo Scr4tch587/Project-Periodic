@@ -9,7 +9,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	{
 		// Play click sound effect.
 		audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-	
+		
 		// Sets click state to true.
 		is_clicked = true;
 		
@@ -26,14 +26,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Calls function to generate new upgrades.
-			get_upgrades();
-	
-			// Destroys self.
-			instance_destroy();
+			// Closes the game.
+			game_end();
 		}
 	}
 }
@@ -53,16 +47,10 @@ if (_max_pads > 0)
 	if (gamepad_is_connected(0))
 	{
 		// Checks if gamepad button has been pressed.
-		if (gamepad_button_check_pressed(0, gp_face4))
+		if (gamepad_button_check_pressed(0, gp_select))
 		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Calls function to generate new upgrades.
-			get_upgrades();
-	
-			// Destroys self.
-			instance_destroy();
+			// Closes the game.
+			game_end();
 		}
 	}
 }

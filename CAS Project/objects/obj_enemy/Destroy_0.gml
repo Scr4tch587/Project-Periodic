@@ -5,6 +5,7 @@
 // dropping a heart.
 // We assign the result to _drop.
 var _drop = choose(obj_heart, obj_heart, obj_heart, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_heart);
+global.xp += 1;
 
 // Create the chosen drop.
 instance_create_layer(x + 0, y + 0, "Instances", _drop);

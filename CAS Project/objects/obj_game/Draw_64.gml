@@ -11,7 +11,7 @@ if (instance_exists(obj_game_over))
 }
 
 // If the upgrade screen is open...
-if (instance_exists(obj_upgrade))
+if (instance_exists(obj_upgrade_screen))
 {
 	// Exit event, so we don't render the HUD.
 	exit;

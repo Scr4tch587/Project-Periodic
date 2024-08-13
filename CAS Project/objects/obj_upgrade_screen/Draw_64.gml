@@ -20,4 +20,5 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 // Draws the heading.
-draw_text(1920 / 2, 175, "UPGRADE");
+draw_text(1920 / 2, 175, "WAVE CLEARED");
+draw_text(1920 / 2, 250, "NOW GOING TO WAVE " + string(global.level + 1));

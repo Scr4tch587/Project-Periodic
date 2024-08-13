@@ -6,7 +6,7 @@ if (global.paused)
 }
 
 // Check if game is running.
-if (instance_exists(obj_upgrade) || instance_exists(obj_template_complete) || instance_exists(obj_game_over))
+if (instance_exists(obj_template_complete) || instance_exists(obj_game_over))
 {	
 	// Stop moving the hero.
 	speed = 0;

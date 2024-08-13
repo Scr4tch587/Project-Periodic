@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"list_shuffle",
   "isCompatibility":false,
   "isDnD":false,

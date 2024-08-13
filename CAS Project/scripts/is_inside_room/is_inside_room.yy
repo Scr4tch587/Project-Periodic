@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"is_inside_room",
   "isCompatibility":false,
   "isDnD":false,

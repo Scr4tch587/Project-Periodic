@@ -20,7 +20,7 @@ if (instance_exists(obj_template_complete))
 }
 
 // If the upgrade screen is open...
-if (instance_exists(obj_upgrade))
+if (instance_exists(obj_upgrade_screen))
 {
 	// Exit event.
 	exit;
