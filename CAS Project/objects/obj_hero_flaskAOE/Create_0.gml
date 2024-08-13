@@ -1,4 +1,4 @@
-
+image_alpha = 0.5;
 
 // Set depth to a high negative number
 // to make sure it's drawn on top of
