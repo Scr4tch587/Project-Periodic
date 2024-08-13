@@ -1,5 +1,5 @@
 if (!global.paused)
-{
+{	//change sizes
 	counter += 1;
 	if (counter > 30 and counter <= 60)
 	{
