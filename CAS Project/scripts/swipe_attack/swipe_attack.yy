@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"swipe_attack",
   "isCompatibility":false,
   "isDnD":false,

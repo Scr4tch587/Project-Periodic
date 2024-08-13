@@ -1,13 +1,16 @@
 var delta = delta_time / 1000000;
 
-y += neededvspeed*delta;
-vspeed += grav;
-if (othercountdown >= neededtime)
+if (!global.paused)
 {
-	instance_create_layer(x, y, "Instances", obj_hero_cloud);
-	instance_destroy()
+	y += neededvspeed*delta;
+	vspeed += grav;
+	if (othercountdown >= neededtime)
+	{
+		instance_create_layer(x, y, "Instances", obj_hero_cloud);
+		instance_destroy()
+	}
+
+
+	countdown += delta;
+	othercountdown += 1;
 }
-
-
-countdown += delta;
-othercountdown += 1;
