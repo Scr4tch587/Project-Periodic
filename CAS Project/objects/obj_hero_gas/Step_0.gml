@@ -4,7 +4,7 @@ y += neededvspeed*delta;
 vspeed += grav;
 if (othercountdown >= neededtime)
 {
-	instance_create_layer(x, y, "Instances", obj_hero_flaskaoe);
+	instance_create_layer(x, y, "Instances", obj_hero_cloud);
 	instance_destroy()
 }
 
