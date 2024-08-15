@@ -50,8 +50,7 @@ if (true)
 	hero_shoot();	
 }
 
-// Check if function cooldown is finished.
-if (hero_swipe_cooldown <= 0)
+if (true)
 {
 	// Call function.
 	hero_swipe();	
@@ -66,4 +65,5 @@ if (true)
 switch_weapon();
 //increment cooldown to shoot variable
 _shootcd += 1
+_gascd += 1
 global.mana += 0.001

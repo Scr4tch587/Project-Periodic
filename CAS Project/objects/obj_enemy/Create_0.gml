@@ -1,5 +1,7 @@
 //cooldown variable for puddle attack
 _cooldown = 0;
+//cooldown variable for gas attack
+cloudcd = 0;
 // Create variable for max hitpoints.
 hitpoints_max = 2 * global.enemy_health_bonus;
 

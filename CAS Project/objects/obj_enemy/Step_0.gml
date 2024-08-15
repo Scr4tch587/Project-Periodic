@@ -16,4 +16,9 @@ if(hspeed != 0)
 }
 
 //adjust cooldown
-_cooldown = _cooldown + 1;
+
+if (!global.paused) 
+{
+	_cooldown += 1;
+	cloudcd += 1;
+}
