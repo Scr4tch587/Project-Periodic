@@ -27,6 +27,10 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		if (mouse_check_button_released(mb_left))
 		{
 			// Closes the game.
+			ini_open("save_file.ini"); 
+			ini_write_real("Save", "coins" ,global.coins);
+			ini_close();
+			
 			game_end();
 		}
 	}
@@ -37,23 +41,6 @@ else
 	target_scale = 1.0;	
 }
 
-// Stores how many gamepad count.
-var _max_pads = gamepad_get_device_count();
-
-// Checks when at least 1 gamepad is present.
-if (_max_pads > 0)
-{
-	// Checks the gamepad is connected.
-	if (gamepad_is_connected(0))
-	{
-		// Checks if gamepad button has been pressed.
-		if (gamepad_button_check_pressed(0, gp_select))
-		{
-			// Closes the game.
-			game_end();
-		}
-	}
-}
 
 // Lerp scale values to target scale.
 image_xscale = lerp(image_xscale, target_scale, 0.1);

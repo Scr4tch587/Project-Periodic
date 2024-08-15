@@ -4,7 +4,7 @@
 // regular collectibles, and a 1 in 10 chance of
 // dropping a heart.
 // We assign the result to _drop.
-var _drop = choose(obj_heart, obj_heart, obj_heart, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_collectable, obj_heart);
+var _drop = choose(obj_heart, obj_heart, obj_heart, obj_coin, obj_coin, obj_coin, obj_collectable, obj_collectable, obj_collectable, obj_heart);
 global.xp += 1;
 
 // Create the chosen drop.

@@ -66,6 +66,7 @@ draw_set_valign(fa_middle);
 // Draw our current level.
 draw_text(600, 115, "Atoms");
 draw_text(575, 60, "HP");
+draw_text(1920 / 2, 250, "COINS: " + string(global.coins));
 
 
 // Draw the shooting weapon icon, using the "unlocked"

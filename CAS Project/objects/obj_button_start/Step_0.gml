@@ -29,6 +29,12 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			// Play click sound effect.
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 			
+			ini_open("save_file.ini"); 
+	
+			global.coins = ini_read_real("Save","coins",0) //load value of coins 
+
+			ini_close(); 
+			
 			// Go to lobby.
 			room_goto(rm_lobby);
 		}
@@ -38,27 +44,6 @@ else
 {
 	// Reset target scale size.
 	target_scale = 1.0;	
-}
-
-// Stores how many gamepad count.
-var _max_pads = gamepad_get_device_count();
-
-// Checks when at least 1 gamepad is present.
-if (_max_pads > 0)
-{
-	// Checks the gamepad is connected.
-	if (gamepad_is_connected(0))
-	{
-		// Checks if gamepad button has been pressed.
-		if (gamepad_button_check_pressed(0, gp_start))
-		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-			
-			// Go to lobby.
-			room_goto(rm_lobby);
-		}
-	}
 }
 
 // Lerp scale values to target scale.

@@ -30,7 +30,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 	
 			// Go to the main menu.
-			room_goto(rm_menu);
+			room_goto(rm_lobby);
 		}
 	}
 }
@@ -56,7 +56,7 @@ if (_max_pads > 0)
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 	
 			// Go to the main menu.
-			room_goto(rm_menu);
+			room_goto(rm_lobby);
 		}
 	}
 }
