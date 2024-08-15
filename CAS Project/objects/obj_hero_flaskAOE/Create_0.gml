@@ -1,4 +1,5 @@
 image_alpha = 0.5;
+image_angle = irandom_range(0, 360);
 
 // Set depth to a high negative number
 // to make sure it's drawn on top of
