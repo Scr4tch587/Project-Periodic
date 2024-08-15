@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"CAS Project",
-    "path":"CAS Project.yyp",
+    "name":"Weapons",
+    "path":"folders/Sprites/Weapons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

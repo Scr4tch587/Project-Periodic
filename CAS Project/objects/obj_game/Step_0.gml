@@ -39,7 +39,7 @@ if (!instance_exists(obj_template_complete))
 	
 		// Destroy any health pickups.
 		with (obj_heart) instance_destroy();
-	
+		
 		// If we are on the last wave...
 		if (global.level == 10)
 		{
