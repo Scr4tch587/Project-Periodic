@@ -58,7 +58,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"CAS Project",
   "resources":[
@@ -196,10 +196,10 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
-    {"id":{"name":"Sprite54","path":"sprites/Sprite54/Sprite54.yy",},},
     {"id":{"name":"Sprite57","path":"sprites/Sprite57/Sprite57.yy",},},
     {"id":{"name":"Sprite62","path":"sprites/Sprite62/Sprite62.yy",},},
     {"id":{"name":"Sprite63","path":"sprites/Sprite63/Sprite63.yy",},},
+    {"id":{"name":"TITLE","path":"sprites/TITLE/TITLE.yy",},},
     {"id":{"name":"wall_horizontal_2","path":"sprites/wall_horizontal_2/wall_horizontal_2.yy",},},
     {"id":{"name":"wall_horizontal","path":"sprites/wall_horizontal/wall_horizontal.yy",},},
     {"id":{"name":"wall_vertical","path":"sprites/wall_vertical/wall_vertical.yy",},},
