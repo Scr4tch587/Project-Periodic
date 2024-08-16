@@ -41,27 +41,6 @@ else
 	target_scale = 1.0;	
 }
 
-// Stores how many gamepad count.
-var _max_pads = gamepad_get_device_count();
-
-// Checks when at least 1 gamepad is present.
-if (_max_pads > 0)
-{
-	// Checks the gamepad is connected.
-	if (gamepad_is_connected(0))
-	{
-		// Checks if gamepad button has been pressed.
-		if (gamepad_button_check_pressed(0, gp_start))
-		{
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-	
-			// Restart this room.
-			// Restarting the game.
-			room_restart();
-		}
-	}
-}
 
 // Lerp scale values to target scale.
 image_xscale = lerp(image_xscale, target_scale, 0.1);
