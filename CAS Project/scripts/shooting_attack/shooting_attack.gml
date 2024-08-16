@@ -17,7 +17,7 @@ function shooting_attack()
 		audio_play_sound(snd_lightning_throw, 0, 0, 1, undefined, 1.0);
 	
 		// Repeat the following code for each bullet we need to spawn.
-		repeat (global.shooting[? "number_of_shots"])
+		repeat (1)
 		{
 			// Create a bullet and assign it to temp variable _bullet.
 			var _bullet = instance_create_layer(x, y, "Instances", obj_hero_bullet);
