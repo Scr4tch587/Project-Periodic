@@ -18,6 +18,9 @@ if (!instance_exists(obj_game_over))
 	
 		// Destroy any health pickups.
 		with (obj_heart) instance_destroy();
+		
+		// Destroy any health pickups.
+		with (obj_coin) instance_destroy();
 	
 		// Create game over object.
 		instance_create_layer(1920 / 2, 1080 / 2 - 150, "UpgradeScreen", obj_game_over);
