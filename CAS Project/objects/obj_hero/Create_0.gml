@@ -34,7 +34,7 @@ hero_shoot = function() {
 // Function for the swiping weapon
 hero_swipe = function()
 {
-	if (mouse_check_button_pressed(mb_left))
+	if (keyboard_check_pressed(vk_space))
 	{	
 		// If the nearest enemy is within 250 pixels...
 		if (nearest_distance < 250)
@@ -43,11 +43,7 @@ hero_swipe = function()
 			hero_swipe_cooldown = max(global.swipe[? "attack_speed"], 1) * (1 / 60);
 
 			// Execute the function that handles this weapon.
-			if (global.swipe[? "unlocked"])
-			{	
-				// Execute the function that handles this weapon.
-				swipe_attack();
-			}
+			swipe_attack();
 		}
 		// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
 		else
@@ -89,23 +85,8 @@ hero_chunk = function()
 
 switch_weapon = function()
 {
-	if (keyboard_check(ord("E"))) {
-		if (global.trail[? "unlocked"]) {
-			ds_map_replace(global.trail, "unlocked", false);
-		}
-		if (global.shooting[? "unlocked"]) {
-			ds_map_replace(global.shooting, "unlocked", false);
-		}
-		if (global.chunk[? "unlocked"]) {
-			ds_map_replace(global.chunk, "unlocked", false);
-		}
-		ds_map_replace(global.swipe, "unlocked", true);
-	}
 	
 	if (keyboard_check(ord("1"))) {
-		if (global.swipe[? "unlocked"]) {
-			ds_map_replace(global.swipe, "unlocked", false);
-		}
 		if (global.trail[? "unlocked"]) {
 			ds_map_replace(global.trail, "unlocked", false);
 		}
@@ -116,9 +97,6 @@ switch_weapon = function()
 	}
 	
 	if (keyboard_check(ord("2"))) {
-		if (global.swipe[? "unlocked"]) {
-			ds_map_replace(global.swipe, "unlocked", false);
-		}
 		if (global.shooting[? "unlocked"]) {
 			ds_map_replace(global.shooting, "unlocked", false);
 		}
@@ -129,9 +107,6 @@ switch_weapon = function()
 	}
 	
 	if (keyboard_check(ord("3"))) {
-		if (global.swipe[? "unlocked"]) {
-			ds_map_replace(global.swipe, "unlocked", false);
-		}
 		if (global.shooting[? "unlocked"]) {
 			ds_map_replace(global.shooting, "unlocked", false);
 		}
