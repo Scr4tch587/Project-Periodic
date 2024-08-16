@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lobby",
+  "%Name":"obj_proton",
   "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":3,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_lobby",
+  "name":"obj_proton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lobby",
-    "path":"folders/Objects/Game/Lobby.yy",
+    "name":"Subatomic Particles",
+    "path":"folders/Objects/Game/Pickups/Subatomic Particles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_collectible_heart",
+    "path":"sprites/spr_collectible_heart/spr_collectible_heart.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

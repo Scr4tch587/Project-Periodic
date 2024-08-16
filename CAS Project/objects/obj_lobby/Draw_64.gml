@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 //loadfile = "save_file.ini"
 
 //if(file_exists(loadfile)) { 
@@ -12,3 +9,6 @@
 //} 
 	
 draw_text(1920 / 2, 250, "COINS: " + string(global.coins));
+draw_text(1920 / 2, 275, "ELECTRONS: " + string(global.electrons));
+draw_text(1920 / 2, 300, "PROTONS: " + string(global.protons));
+draw_text(1920 / 2, 325, "NEUTRONS: " + string(global.neutrons));

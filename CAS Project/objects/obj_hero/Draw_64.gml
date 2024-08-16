@@ -62,6 +62,9 @@ draw_set_valign(fa_middle);
 
 // Draw our current level.
 draw_text(1920 / 2, 250, "COINS: " + string(global.coins));
+draw_text(1920 / 2, 275, "ELECTRONS: " + string(global.electrons));
+draw_text(1920 / 2, 300, "PROTONS: " + string(global.protons));
+draw_text(1920 / 2, 325, "NEUTRONS: " + string(global.neutrons));
 
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.

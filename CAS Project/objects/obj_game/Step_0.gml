@@ -17,7 +17,11 @@ if (!instance_exists(obj_game_over))
 		with (obj_enemy) instance_destroy();
 	
 		// Destroy any xp pickups.
-		with (obj_collectable) instance_destroy();
+		with (obj_atom) instance_destroy();
+		
+		with (obj_electron) instance_destroy();
+		with (obj_neutron) instance_destroy();
+		with (obj_proton) instance_destroy();
 	
 		// Destroy any health pickups.
 		with (obj_heart) instance_destroy();
@@ -44,7 +48,11 @@ if (!instance_exists(obj_game_over))
 		with (obj_hero_chunk) instance_destroy();
 	
 		// Destroy any xp pickups.
-		with (obj_collectable) instance_destroy();
+		with (obj_atom) instance_destroy();
+		
+		with (obj_electron) instance_destroy();
+		with (obj_neutron) instance_destroy();
+		with (obj_proton) instance_destroy();
 	
 		// Destroy any health pickups.
 		with (obj_heart) instance_destroy();
