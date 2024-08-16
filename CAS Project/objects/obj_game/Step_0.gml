@@ -9,6 +9,9 @@ if (!instance_exists(obj_game_over))
 	
 		// Destroy any bullets.
 		with (obj_hero_bullet) instance_destroy();
+		
+		// Destroy any chunks.
+		with (obj_hero_chunk) instance_destroy();
 	
 		// Destroy the enemies.
 		with (obj_enemy) instance_destroy();
@@ -36,6 +39,9 @@ if (!instance_exists(obj_game_over))
 	{
 		// Destroy any bullets.
 		with (obj_hero_bullet) instance_destroy();
+		
+		// Destroy any chunks.
+		with (obj_hero_chunk) instance_destroy();
 	
 		// Destroy any xp pickups.
 		with (obj_collectable) instance_destroy();
