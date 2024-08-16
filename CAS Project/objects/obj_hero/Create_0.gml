@@ -73,6 +73,14 @@ hero_gas = function()
 	}
 }
 
+hero_chunk = function()
+{
+	if (mouse_check_button_pressed(mb_left))
+	{
+		chunk_attack();
+	}
+}
+
 switch_weapon = function()
 {
 	if (keyboard_check(ord("E"))) {

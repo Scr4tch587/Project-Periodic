@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script16",
+  "%Name":"chunk_attack",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script16",
+  "name":"chunk_attack",
   "parent":{
-    "name":"Save Function",
-    "path":"folders/Scripts/Save Function.yy",
+    "name":"Weapons",
+    "path":"folders/Scripts/Weapons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
