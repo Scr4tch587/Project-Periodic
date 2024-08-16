@@ -14,6 +14,7 @@ _gascd = 240;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
+global.chunk = ds_map_create();
 
 // Function for the shooting weapon.
 hero_shoot = function() {
@@ -76,8 +77,13 @@ hero_gas = function()
 hero_chunk = function()
 {
 	if (mouse_check_button_pressed(mb_left))
-	{
-		chunk_attack();
+	{	
+		if (global.chunk[? "unlocked"]) {
+			if (global.mana >= 5) {
+				global.mana -= 5;
+				chunk_attack();
+			}
+		}
 	}
 }
 
@@ -90,6 +96,9 @@ switch_weapon = function()
 		if (global.shooting[? "unlocked"]) {
 			ds_map_replace(global.shooting, "unlocked", false);
 		}
+		if (global.chunk[? "unlocked"]) {
+			ds_map_replace(global.chunk, "unlocked", false);
+		}
 		ds_map_replace(global.swipe, "unlocked", true);
 	}
 	
@@ -99,6 +108,9 @@ switch_weapon = function()
 		}
 		if (global.trail[? "unlocked"]) {
 			ds_map_replace(global.trail, "unlocked", false);
+		}
+		if (global.chunk[? "unlocked"]) {
+			ds_map_replace(global.chunk, "unlocked", false);
 		}
 		ds_map_replace(global.shooting, "unlocked", true);
 	}
@@ -110,7 +122,23 @@ switch_weapon = function()
 		if (global.shooting[? "unlocked"]) {
 			ds_map_replace(global.shooting, "unlocked", false);
 		}
+		if (global.chunk[? "unlocked"]) {
+			ds_map_replace(global.chunk, "unlocked", false);
+		}
 		ds_map_replace(global.trail, "unlocked", true);
+	}
+	
+	if (keyboard_check(ord("3"))) {
+		if (global.swipe[? "unlocked"]) {
+			ds_map_replace(global.swipe, "unlocked", false);
+		}
+		if (global.shooting[? "unlocked"]) {
+			ds_map_replace(global.shooting, "unlocked", false);
+		}
+		if (global.trail[? "unlocked"]) {
+			ds_map_replace(global.trail, "unlocked", false);
+		}
+		ds_map_replace(global.chunk, "unlocked", true);
 	}
 }
 
