@@ -75,20 +75,34 @@ hero_gas = function()
 
 switch_weapon = function()
 {
-	if (keyboard_check_pressed(vk_space)) {
+	if (keyboard_check(ord("E"))) {
+		if (global.trail[? "unlocked"]) {
+			ds_map_replace(global.trail, "unlocked", false);
+		}
+		if (global.shooting[? "unlocked"]) {
+			ds_map_replace(global.shooting, "unlocked", false);
+		}
+		ds_map_replace(global.swipe, "unlocked", true);
+	}
+	
+	if (keyboard_check(ord("1"))) {
 		if (global.swipe[? "unlocked"]) {
 			ds_map_replace(global.swipe, "unlocked", false);
-			
-			ds_map_replace(global.trail, "unlocked", true);
-		} else if (global.trail[? "unlocked"]) {
-			ds_map_replace(global.trail, "unlocked", false);
-			
-			ds_map_replace(global.shooting, "unlocked", true);
-		} else {
-			ds_map_replace(global.shooting, "unlocked", false);
-			
-			ds_map_replace(global.swipe, "unlocked", true);
 		}
+		if (global.trail[? "unlocked"]) {
+			ds_map_replace(global.trail, "unlocked", false);
+		}
+		ds_map_replace(global.shooting, "unlocked", true);
+	}
+	
+	if (keyboard_check(ord("2"))) {
+		if (global.swipe[? "unlocked"]) {
+			ds_map_replace(global.swipe, "unlocked", false);
+		}
+		if (global.shooting[? "unlocked"]) {
+			ds_map_replace(global.shooting, "unlocked", false);
+		}
+		ds_map_replace(global.trail, "unlocked", true);
 	}
 }
 

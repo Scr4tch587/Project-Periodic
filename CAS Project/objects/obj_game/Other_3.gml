@@ -4,4 +4,4 @@ ini_open("save_file.ini");
 ini_write_real("Save", "coins" ,global.coins);
 ini_close();
 			
-game_end();
+game_end(); // save coins if game is manually closed

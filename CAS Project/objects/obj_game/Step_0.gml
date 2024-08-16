@@ -29,7 +29,7 @@ if (!instance_exists(obj_game_over))
 
 // If the game is over...
 // We do this by checking is an end game screen is present.
-if (!instance_exists(obj_template_complete))
+if (!instance_exists(obj_game_over))
 {
 	// If we have reached the experience goal...
 	if (global.xp >= global.xp_goal)
