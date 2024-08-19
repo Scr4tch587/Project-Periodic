@@ -54,7 +54,7 @@ hero_swipe = function()
 	}
 }
 
-// Function for the trail weapon
+// Function for the gas weapon
 hero_gas = function()
 {
 	if (mouse_check_button_pressed(mb_left) and _gascd >= 240)
@@ -69,7 +69,7 @@ hero_gas = function()
 			}
 	}
 }
-
+// function for the explosive weapon
 hero_chunk = function()
 {
 	if (mouse_check_button_pressed(mb_left))
@@ -80,6 +80,14 @@ hero_chunk = function()
 				chunk_attack();
 			}
 		}
+	}
+}
+
+//function for water
+hero_water = function() {
+	if (keyboard_check(ord("G")))
+	{	
+		water_attack();
 	}
 }
 

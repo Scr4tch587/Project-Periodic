@@ -67,6 +67,11 @@ if (true)
 	//call function.
 	hero_chunk();
 }
+
+if (true)
+{
+	hero_water();
+}
 switch_weapon();
 //increment cooldown to shoot variable
 _shootcd += 1

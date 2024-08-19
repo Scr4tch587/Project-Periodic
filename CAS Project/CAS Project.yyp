@@ -63,7 +63,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"CAS Project",
   "resources":[
@@ -98,6 +98,7 @@
     {"id":{"name":"obj_hero_gas","path":"objects/obj_hero_gas/obj_hero_gas.yy",},},
     {"id":{"name":"obj_hero_swipe","path":"objects/obj_hero_swipe/obj_hero_swipe.yy",},},
     {"id":{"name":"obj_hero_trail","path":"objects/obj_hero_trail/obj_hero_trail.yy",},},
+    {"id":{"name":"obj_hero_water","path":"objects/obj_hero_water/obj_hero_water.yy",},},
     {"id":{"name":"obj_hero","path":"objects/obj_hero/obj_hero.yy",},},
     {"id":{"name":"obj_interact","path":"objects/obj_interact/obj_interact.yy",},},
     {"id":{"name":"obj_lab_screen","path":"objects/obj_lab_screen/obj_lab_screen.yy",},},
@@ -137,6 +138,7 @@
     {"id":{"name":"shooting_attack","path":"scripts/shooting_attack/shooting_attack.yy",},},
     {"id":{"name":"swipe_attack","path":"scripts/swipe_attack/swipe_attack.yy",},},
     {"id":{"name":"unpause","path":"scripts/unpause/unpause.yy",},},
+    {"id":{"name":"water_attack","path":"scripts/water_attack/water_attack.yy",},},
     {"id":{"name":"weapon_shooting","path":"scripts/weapon_shooting/weapon_shooting.yy",},},
     {"id":{"name":"weapon_swipe","path":"scripts/weapon_swipe/weapon_swipe.yy",},},
     {"id":{"name":"weapon_trail","path":"scripts/weapon_trail/weapon_trail.yy",},},
@@ -235,6 +237,7 @@
     {"id":{"name":"Sprite62","path":"sprites/Sprite62/Sprite62.yy",},},
     {"id":{"name":"Sprite63","path":"sprites/Sprite63/Sprite63.yy",},},
     {"id":{"name":"Sprite64","path":"sprites/Sprite64/Sprite64.yy",},},
+    {"id":{"name":"Sprite86","path":"sprites/Sprite86/Sprite86.yy",},},
     {"id":{"name":"the_goddamn_floor","path":"sprites/the_goddamn_floor/the_goddamn_floor.yy",},},
     {"id":{"name":"TITLE","path":"sprites/TITLE/TITLE.yy",},},
     {"id":{"name":"wall_horizontal_2","path":"sprites/wall_horizontal_2/wall_horizontal_2.yy",},},
