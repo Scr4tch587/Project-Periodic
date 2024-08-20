@@ -2,7 +2,7 @@
 function water_attack()
 {
 	// Get the direction of the hero
-	var _direction = direction;
+	var _direction = global.herolastmoved;
 
 	
 	// Repeat the following code for each bullet we need to spawn.
@@ -17,7 +17,7 @@ function water_attack()
 			direction = _direction;
 			
 			// Set speed of the bullet.
-			speed = 8;
+			speed = 16;
 			
 			// Rotate the bullet to face it's moving direction.
 			image_angle = direction;

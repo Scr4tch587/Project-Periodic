@@ -1,3 +1,5 @@
+global.herolastmoved = direction;
+
 // Set the maximum hitpoints that the player can have.
 hitpoints_max = 10;
 
@@ -11,6 +13,7 @@ nearest_distance = 1000;
 // Cooldowns for the weapon attacks (from frames to seconds).
 _shootcd = 240;
 _gascd = 240;
+_watercd = 10;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
@@ -85,11 +88,13 @@ hero_chunk = function()
 
 //function for water
 hero_water = function() {
-	if (keyboard_check(ord("G")))
+	if (keyboard_check(ord("G")) and _watercd <= 0)
 	{	
 		water_attack();
+		_watercd = 10;
 	}
 }
+
 
 switch_weapon = function()
 {

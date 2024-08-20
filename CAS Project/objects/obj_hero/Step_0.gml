@@ -42,6 +42,7 @@ if (nearest_enemy)
 // Reduce cooldown timer for attacks.
 hero_swipe_cooldown -= delta_time * 0.000001;
 hero_trail_cooldown -= delta_time * 0.000001;
+_watercd -= 1;
 
 //call hero_shoot function (i removed the cooldown since simpler _cdshoot exists now
 if (true)

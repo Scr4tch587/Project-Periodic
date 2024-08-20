@@ -5,6 +5,7 @@ global.mouse_anchor_y = 0;
 // Declare player movement script.
 function player_movement() 
 {
+	keypressed = false;
 	// Set speed to 0.
 	// We increase it again below.
 	speed = 0;
@@ -14,6 +15,7 @@ function player_movement()
 	{
 		// Add -10 to vertical speed.
 		vspeed += -7.5;
+		keypressed = true;
 	}
 	
 	// If the S key is down...
@@ -21,6 +23,7 @@ function player_movement()
 	{
 		// Add 10 to vertical speed.
 		vspeed += 7.5;
+		keypressed = true;
 	}
 	
 	// If the A key is down...
@@ -28,6 +31,7 @@ function player_movement()
 	{
 		// Add -10 to horizontal speed.
 		hspeed += -7.5;
+		keypressed = true;
 	}
 	
 	// If the D key is down...
@@ -35,11 +39,18 @@ function player_movement()
 	{
 		// Add 10 to horizontal speed.
 		hspeed += 7.5;
+		keypressed = true;
 	}
 
 	// Set the direction from the direction
 	// from 0, 0 to hspeed, vspeed.
 	direction = point_direction(x, y, x + hspeed, y + vspeed);
+	
+	if (keypressed)
+	{
+		global.herolastmoved = direction;
+	}
+
 
 	// Set speed to a fixed value in the current direction.
 	// This essentially normalizes the curent hspeed and vspeed values.

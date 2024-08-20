@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hero_water",
+  "%Name":"obj_hero_explosion",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_hero_water",
+  "name":"obj_hero_explosion",
   "overriddenProperties":[],
   "parent":{
     "name":"Hero and Weapons",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite86",
-    "path":"sprites/Sprite86/Sprite86.yy",
+    "name":"Sprite87",
+    "path":"sprites/Sprite87/Sprite87.yy",
   },
   "spriteMaskId":null,
   "visible":true,
