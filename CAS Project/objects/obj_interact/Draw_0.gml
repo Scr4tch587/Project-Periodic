@@ -8,9 +8,10 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 
-
-if (inradius == true) {
-	draw_text(x+25, y - 20, "'E'");
-} else {
-	draw_text(x+25, y - 20, "'!'");
+if (!instance_exists(obj_lab_screen)) {
+	if (inradius == true) {
+		draw_text(x+25, y - 20, "'E'");
+	} else {
+		draw_text(x+25, y - 20, "!");
+	}
 }
