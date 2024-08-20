@@ -35,6 +35,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.electrons = ini_read_real("Save","electrons",0)
 			global.protons = ini_read_real("Save","neutrons",0)
 			global.neutrons = ini_read_real("Save","protons",0)
+			global.chunks = ini_read_string("Save","chunks", "Na")
 
 			ini_close(); 
 			
