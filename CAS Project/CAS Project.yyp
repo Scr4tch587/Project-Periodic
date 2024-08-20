@@ -178,6 +178,7 @@
     {"id":{"name":"lobby_exit","path":"sprites/lobby_exit/lobby_exit.yy",},},
     {"id":{"name":"lobby_wall","path":"sprites/lobby_wall/lobby_wall.yy",},},
     {"id":{"name":"popup_sprite","path":"sprites/popup_sprite/popup_sprite.yy",},},
+    {"id":{"name":"ptable","path":"sprites/ptable/ptable.yy",},},
     {"id":{"name":"spr_arcing_attack_big","path":"sprites/spr_arcing_attack_big/spr_arcing_attack_big.yy",},},
     {"id":{"name":"spr_arcing_attack_small","path":"sprites/spr_arcing_attack_small/spr_arcing_attack_small.yy",},},
     {"id":{"name":"spr_arcing","path":"sprites/spr_arcing/spr_arcing.yy",},},
