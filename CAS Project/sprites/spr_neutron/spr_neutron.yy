@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_neutron",
   "bboxMode":0,
-  "bbox_bottom":64,
+  "bbox_bottom":49,
   "bbox_left":0,
-  "bbox_right":64,
+  "bbox_right":49,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":65,
+  "height":50,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"85e13c41-4837-4a20-8e2c-e9753ebcebc1","blendMode":0,"displayName":"default","isLocked":false,"name":"85e13c41-4837-4a20-8e2c-e9753ebcebc1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":65,
+  "width":50,
 }

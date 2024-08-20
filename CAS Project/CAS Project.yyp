@@ -27,6 +27,7 @@
     {"$GMFolder":"","%Name":"Subatomic Particles","folderPath":"folders/Objects/Game/Pickups/Subatomic Particles.yy","name":"Subatomic Particles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Template Complete","folderPath":"folders/Objects/Game/Template Complete.yy","name":"Template Complete","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Wave Progression","folderPath":"folders/Objects/Game/Wave Progression.yy","name":"Wave Progression","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Loading","folderPath":"folders/Objects/Loading.yy","name":"Loading","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -64,7 +65,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"CAS Project",
   "resources":[
@@ -105,6 +106,7 @@
     {"id":{"name":"obj_interact","path":"objects/obj_interact/obj_interact.yy",},},
     {"id":{"name":"obj_lab_screen","path":"objects/obj_lab_screen/obj_lab_screen.yy",},},
     {"id":{"name":"obj_labstation","path":"objects/obj_labstation/obj_labstation.yy",},},
+    {"id":{"name":"obj_loadingscreen","path":"objects/obj_loadingscreen/obj_loadingscreen.yy",},},
     {"id":{"name":"obj_lobby_button_quit","path":"objects/obj_lobby_button_quit/obj_lobby_button_quit.yy",},},
     {"id":{"name":"obj_lobby_button_start","path":"objects/obj_lobby_button_start/obj_lobby_button_start.yy",},},
     {"id":{"name":"obj_lobby","path":"objects/obj_lobby/obj_lobby.yy",},},
@@ -125,6 +127,7 @@
     {"id":{"name":"obj_upgrade_screen","path":"objects/obj_upgrade_screen/obj_upgrade_screen.yy",},},
     {"id":{"name":"Wall","path":"objects/Wall/Wall.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_loading","path":"rooms/rm_loading/rm_loading.yy",},},
     {"id":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"id":{"name":"attack_trail","path":"scripts/attack_trail/attack_trail.yy",},},
@@ -246,6 +249,7 @@
     {"id":{"name":"Sprite64","path":"sprites/Sprite64/Sprite64.yy",},},
     {"id":{"name":"Sprite86","path":"sprites/Sprite86/Sprite86.yy",},},
     {"id":{"name":"Sprite87","path":"sprites/Sprite87/Sprite87.yy",},},
+    {"id":{"name":"Sprite92","path":"sprites/Sprite92/Sprite92.yy",},},
     {"id":{"name":"the_goddamn_floor","path":"sprites/the_goddamn_floor/the_goddamn_floor.yy",},},
     {"id":{"name":"TITLE","path":"sprites/TITLE/TITLE.yy",},},
     {"id":{"name":"wall_horizontal_2","path":"sprites/wall_horizontal_2/wall_horizontal_2.yy",},},
@@ -259,6 +263,7 @@
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
+    {"roomId":{"name":"rm_loading","path":"rooms/rm_loading/rm_loading.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
