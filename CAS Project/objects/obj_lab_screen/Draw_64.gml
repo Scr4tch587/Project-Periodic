@@ -7,3 +7,4 @@ draw_set_alpha(0.8);
 
 // Draws rectangle over screen.
 draw_rectangle(0, 0, 1920, 1080, 0);
+
