@@ -9,17 +9,7 @@ with (obj_enemy)
 	
 	if (distance <= 150){
 		ifdamage = true;
-		damage = 0.5
-		if (distance <= 10)
-		{
-			damage = 5;
-		}
-		else if (distance <= 50){
-			damage = 3;
-		}
-		else if (distance <= 100){
-			damage = 1.5;
-		}
+		damage = 0.03*(150-distance)
 		
 	}
 	
