@@ -109,6 +109,7 @@
     {"id":{"name":"obj_lobby_button_quit","path":"objects/obj_lobby_button_quit/obj_lobby_button_quit.yy",},},
     {"id":{"name":"obj_lobby_button_start","path":"objects/obj_lobby_button_start/obj_lobby_button_start.yy",},},
     {"id":{"name":"obj_lobby","path":"objects/obj_lobby/obj_lobby.yy",},},
+    {"id":{"name":"obj_lobbydoor","path":"objects/obj_lobbydoor/obj_lobbydoor.yy",},},
     {"id":{"name":"obj_lobbyhero","path":"objects/obj_lobbyhero/obj_lobbyhero.yy",},},
     {"id":{"name":"obj_neutron","path":"objects/obj_neutron/obj_neutron.yy",},},
     {"id":{"name":"obj_pause_button","path":"objects/obj_pause_button/obj_pause_button.yy",},},
