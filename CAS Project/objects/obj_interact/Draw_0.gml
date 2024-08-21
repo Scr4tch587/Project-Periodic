@@ -10,8 +10,8 @@ draw_set_colour(c_black);
 
 if (!instance_exists(obj_lab_screen)) {
 	if (inradius == true) {
-		draw_text(x+25, y - 20, "'E'");
+		draw_text(x + 69, y - 23, "'E'");
 	} else {
-		draw_text(x+25, y - 20, "!");
+		draw_text(x + 69, y - 23, "!");
 	}
 }

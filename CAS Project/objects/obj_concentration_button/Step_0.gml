@@ -7,9 +7,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	// If left mouse button is pressed...
 	if (mouse_check_button_pressed(mb_left))
 	{
-		// Play click sound effect.
-		audio_play_sound(snd_click, 0, 0, 1.0, undefined, 1.0);
-		
+	
 		// Sets click state to true.
 		is_clicked = true;
 		
@@ -24,25 +22,12 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		target_scale = 0.9;
 		
 		// If left mouse button is released...
-		if ( mouse_check_button_released(mb_left))
-		{		
-			// Play click sound effect.
-			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
-			
-			ini_open("save_file.ini"); 
-	
-			global.coins = ini_read_real("Save","coins",0) //load value of coins 
-			global.electrons = ini_read_real("Save","electrons",0)
-			global.protons = ini_read_real("Save","neutrons",0)
-			global.neutrons = ini_read_real("Save","protons",0)
-			global.chunks = ini_read_string("Save","chunks", "Na")
-			global.concentration = ini_read_real("Save","concentration",0)
-			
-
-			ini_close(); 
-			
-			// Go to lobby.
-			room_goto(rm_lobby);
+		if (mouse_check_button_released(mb_left))
+		{
+			if (global.neutrons >= 5 && global.electrons >= 5 && global.protons >= 5) {
+				global.neutrons -= 5; global.electrons -= 5; global.protons -= 5;
+				global.concentration += 0.1;
+			}
 		}
 	}
 }

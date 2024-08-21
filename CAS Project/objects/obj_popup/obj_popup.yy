@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"popup_sprite",
-    "path":"sprites/popup_sprite/popup_sprite.yy",
+    "name":"spr_popup",
+    "path":"sprites/spr_popup/spr_popup.yy",
   },
   "spriteMaskId":null,
   "visible":true,
