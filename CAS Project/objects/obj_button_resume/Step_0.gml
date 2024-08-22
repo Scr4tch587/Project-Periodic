@@ -38,6 +38,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			// Destroy resume button.
 			with(obj_button_resume) instance_destroy();
 			
+			with(obj_chunk_button) instance_destroy();
+			
 			// Reset pause buttons released state.
 			obj_pause_button.has_released = false;
 			
@@ -99,6 +101,8 @@ if (has_released && keyboard_check(vk_escape))
 	
 	// Destroy resume button.
 	with(obj_button_resume) instance_destroy();
+	
+	with(obj_chunk_button) instance_destroy();
 	
 	// Reset pause buttons released state.
 	obj_pause_button.has_released = false;

@@ -36,6 +36,7 @@ weapon_trail_reset();
 
 // Create the pause button.
 instance_create_layer(1820, 20, "UpgradeScreen", obj_pause_button);
+instance_create_layer(1820, 20, "UpgradeScreen", obj_camera_hero);
 
 // Sets cooldown for enemy spawning time (from frames to seconds).
 spawn_enemy_cooldown = global.enemy_spawn_speed * (1 / 60);

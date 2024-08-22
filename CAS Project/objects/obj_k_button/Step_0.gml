@@ -24,12 +24,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-			if (global.chunks != "Na") {
-				if (global.coins >= 5) {
-					global.coins -= 5;
-					global.chunks = "Na";
-				}
-			}
+			global.chunks = "K";
+			with(obj_pause_screen) instance_destroy();
 		}
 	}
 }

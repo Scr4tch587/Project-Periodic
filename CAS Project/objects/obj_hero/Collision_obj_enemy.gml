@@ -2,7 +2,7 @@
 if (sprite_index != spr_hero_hit) {
 	// Reduce hitpoints.
 	var _list = ds_list_create();
-	var _num = collision_rectangle_list(x - 40, y - 60, x + 30, y + 60, obj_enemy, false, true, _list, false);
+	var _num = collision_rectangle_list(x - 40, y - 60, x + 40, y + 60, obj_enemy, false, true, _list, false);
 	if (_num > 0) {	
 		hitpoints -= _num;
 
