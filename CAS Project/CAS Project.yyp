@@ -65,7 +65,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"CAS Project",
   "resources":[
@@ -85,6 +85,8 @@
     {"id":{"name":"obj_button_resume","path":"objects/obj_button_resume/obj_button_resume.yy",},},
     {"id":{"name":"obj_button_retry","path":"objects/obj_button_retry/obj_button_retry.yy",},},
     {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},},
+    {"id":{"name":"obj_camera_hero","path":"objects/obj_camera_hero/obj_camera_hero.yy",},},
+    {"id":{"name":"obj_camera_lobby_hero","path":"objects/obj_camera_lobby_hero/obj_camera_lobby_hero.yy",},},
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_concentration_button","path":"objects/obj_concentration_button/obj_concentration_button.yy",},},
     {"id":{"name":"obj_continue_button","path":"objects/obj_continue_button/obj_continue_button.yy",},},

@@ -30,6 +30,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 			
 			// Go to lobby.
+			with(obj_lobbyhero) instance_destroy();
+			with(obj_camera_lobby_hero) instance_destroy();
 			room_goto(rm_game);
 		}
 	}

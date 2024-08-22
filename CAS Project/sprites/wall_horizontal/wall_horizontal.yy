@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"wall_horizontal",
-  "bboxMode":0,
-  "bbox_bottom":319,
+  "bboxMode":2,
+  "bbox_bottom":205,
   "bbox_left":0,
   "bbox_right":827,
   "bbox_top":0,
