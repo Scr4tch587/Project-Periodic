@@ -24,14 +24,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-			if (global.neutrons >= 5 && global.electrons >= 5 && global.protons >= 5) {
-				global.neutrons -= 5; global.electrons -= 5; global.protons -= 5;
-				ini_open("save_file.ini"); 
-				
-				ini_write_real("Save", global.selected + "_conc", ini_read_real("Save",global.selected + "_conc", 0.5) + 0.1);
-
-				ini_close();
-			}
+			global.selected = "K";
+			global.type = "chunk";
 		}
 	}
 }

@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Interactables",
-    "path":"folders/Objects/Game/Lobby/Interactables.yy",
+    "path":"folders/Objects/Lobby/Interactables.yy",
   },
   "parentObjectId":null,
   "persistent":false,

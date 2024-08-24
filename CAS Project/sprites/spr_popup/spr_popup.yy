@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Interactables",
-    "path":"folders/Objects/Game/Lobby/Interactables.yy",
+    "path":"folders/Objects/Lobby/Interactables.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

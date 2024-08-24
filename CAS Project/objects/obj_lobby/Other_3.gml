@@ -6,6 +6,9 @@ ini_write_real("Save", "neutrons" ,global.neutrons);
 ini_write_real("Save", "concentration" ,global.concentration);
 ini_write_string("Save", "chunks" ,global.chunks);
 
+ini_write_string("Save", "Na" ,global.na_unlocked);
+ini_write_string("Save", "K" ,global.k_unlocked);
+
 ini_close();
 			
 game_end(); // save coins if game is manually closed 
