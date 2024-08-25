@@ -9,7 +9,7 @@ hitpoints_max = 2 * global.enemy_health_bonus;
 hitpoints = hitpoints_max;
 
 // Set speed.
-speed = 4;
+
 
 // Set image scale.
 image_xscale = 0.5;

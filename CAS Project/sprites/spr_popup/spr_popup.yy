@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Interactables",
-    "path":"folders/Objects/Lobby/Interactables.yy",
+    "name":"CAS Project",
+    "path":"CAS Project.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

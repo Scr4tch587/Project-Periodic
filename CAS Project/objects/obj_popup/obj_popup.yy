@@ -6,8 +6,8 @@
   "name":"obj_popup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactables",
-    "path":"folders/Objects/Lobby/Interactables.yy",
+    "name":"CAS Project",
+    "path":"CAS Project.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
