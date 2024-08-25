@@ -9,7 +9,8 @@ with (obj_enemy)
 	
 	if (distance <= 150){
 		ifdamage = true;
-		damage = 0.03*(150-distance)
+		ini_open("save_file.ini");
+		damage = 0.015*(150-distance)*ini_read_real("Save", global.selected + "_conc", 1);
 		
 	}
 	

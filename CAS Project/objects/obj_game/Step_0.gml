@@ -90,3 +90,4 @@ if (!global.paused)
 		}
 	}
 }
+

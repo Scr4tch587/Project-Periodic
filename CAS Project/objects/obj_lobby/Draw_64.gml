@@ -13,7 +13,6 @@ draw_text(1920 / 2, 275, "ELECTRONS: " + string(global.electrons));
 draw_text(1920 / 2, 300, "PROTONS: " + string(global.protons));
 draw_text(1920 / 2, 325, "NEUTRONS: " + string(global.neutrons));
 draw_text(1920 / 2, 350, "CHUNK: " + global.chunks);
-draw_text(1920 / 2, 375, "CONCENTRATION: " + string(global.concentration));
 
 
 

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"next_wave",
   "isCompatibility":false,
   "isDnD":false,

@@ -37,6 +37,8 @@ if (instance_exists(obj_pause_button))
 	}
 }
 
+draw_sprite_ext(spr_info, 0, 1370, 25, 0.8, 0.8, 0, c_white, 1);
+
 // Draw the back of the health bar.
 draw_sprite_ext(spr_healthbar, 0, 30, 25, 0.8, 0.8, 0, c_white, 1);
 
@@ -55,17 +57,21 @@ draw_sprite_ext(spr_healthbar_fill, 0, 147, 129, (15.4) * _fill, 1.7, 0, c_white
 
 // Set the font.
 draw_set_font(fnt_small);
+draw_set_colour(c_black);
 
 // Center the text vertically and horizontally.
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
+
 // Draw our current level.
-draw_text(1920 / 2, 250, "COINS: " + string(global.coins));
-draw_text(1920 / 2, 275, "ELECTRONS: " + string(global.electrons));
-draw_text(1920 / 2, 300, "PROTONS: " + string(global.protons));
-draw_text(1920 / 2, 325, "NEUTRONS: " + string(global.neutrons));
+draw_text(1485, 235, string(global.protons));
+draw_text(1600, 235, string(global.neutrons));
+draw_text(1715, 235, string(global.electrons));
+draw_text(1830, 235, string(global.coins));
+
 draw_text(1920 / 2, 350, "CHUNK: " + global.chunks);
+
 
 
 // Draw the shooting weapon icon, using the "unlocked"

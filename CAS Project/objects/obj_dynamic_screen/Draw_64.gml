@@ -24,7 +24,7 @@ if (ini_read_real("Save", global.selected, 0)) {
 		draw_text(x - 200, y + 150, "Type: Group 1 Alkali Metal");
 		ini_open("save_file.ini"); 
 		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(200 * ini_read_real("Save",global.selected + "_conc",0.5)));
+		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
 	}
 }
 
