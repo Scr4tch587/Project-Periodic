@@ -1,5 +1,5 @@
 // Increment experience.
-global.neutrons += 1;
+global.neutrons += 5;
 
 // Choose a random pickup sound effect.
 _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);

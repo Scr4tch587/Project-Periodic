@@ -37,7 +37,7 @@ if (instance_exists(obj_pause_button))
 	}
 }
 
-draw_sprite_ext(spr_info, 0, 1370, 25, 0.8, 0.8, 0, c_white, 1);
+draw_sprite_ext(spr_info, 0, 1290, 25, 0.8, 0.8, 0, c_white, 1);
 
 // Draw the back of the health bar.
 draw_sprite_ext(spr_healthbar, 0, 30, 25, 0.8, 0.8, 0, c_white, 1);
@@ -65,10 +65,10 @@ draw_set_valign(fa_middle);
 
 
 // Draw our current level.
-draw_text(1485, 235, string(global.protons));
-draw_text(1600, 235, string(global.neutrons));
-draw_text(1715, 235, string(global.electrons));
-draw_text(1830, 235, string(global.coins));
+draw_text(1415, 235, string(global.protons));
+draw_text(1550, 235, string(global.neutrons));
+draw_text(1685, 235, string(global.electrons));
+draw_text(1820, 235, string(global.coins));
 
 draw_text(1920 / 2, 350, "CHUNK: " + global.chunks);
 

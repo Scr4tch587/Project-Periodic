@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"chunk_attack",
   "isCompatibility":false,
   "isDnD":false,
