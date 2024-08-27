@@ -70,9 +70,11 @@ draw_text(1550, 235, string(global.neutrons));
 draw_text(1685, 235, string(global.electrons));
 draw_text(1820, 235, string(global.coins));
 
-draw_text(1920 / 2, 350, "CHUNK: " + global.chunks);
+draw_set_font(fnt_large);
+draw_text(1595, 100, "Wave " + string(global.level));
 
-
+draw_set_font(fnt_small);
+draw_text(1595, 150, string(global.xp_goal - global.xp) + " ENEMIES LEFT");
 
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.
