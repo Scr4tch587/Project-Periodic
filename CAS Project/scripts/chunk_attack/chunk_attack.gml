@@ -18,18 +18,18 @@ function chunk_attack(){
 		    var fire_direction = base_direction + random_angle + irandom_range(-spread, spread);
     
 		    // Create the projectile instance
-		    var chunk = instance_create_layer(x, y, "Instances", obj_hero_chunk);
+		    var _chunk = instance_create_layer(x, y, "Instances", obj_hero_chunk);
     
 		    // Set the projectile's movement
-		    chunk.direction = fire_direction;
-		    chunk.initial_speed = projectile_speed;
+		    _chunk.direction = fire_direction;
+		    _chunk.initial_speed = projectile_speed;
 			if (i != 0)
 			{
-				chunk.delay_timer = irandom_range(0,15);  // Random delay between 15 and 60 steps
+				_chunk.delay_timer = irandom_range(0,15);  // Random delay between 15 and 60 steps
 			}
 			else
 			{
-				chunk.delay_timer = 0;
+				_chunk.delay_timer = 0;
 			}
 		}
 	}
