@@ -12,22 +12,13 @@ vspeed = lengthdir_y(speed, direction);
 
 // Attempt to move horizontally
 
-if (place_meeting(x + 10, y, obj_environment) || place_meeting(x + 10, y, obj_enemy)) {
+if (place_meeting(x + 10, y, obj_environment) || place_meeting(x + 10, y, obj_enemy) || place_meeting(x - 10, y, obj_environment) || place_meeting(x - 10, y, obj_enemy)) {
   x -= hspeed;
 } 
 
-if (place_meeting(x, y + 10, obj_environment) || place_meeting(x, y + 10, obj_enemy)) {
+if (place_meeting(x, y + 10, obj_environment) || place_meeting(x, y + 10, obj_enemy) || place_meeting(x, y - 10, obj_environment) || place_meeting(x, y - 10, obj_enemy)) {
   y -= vspeed;
 } 
-
-if (place_meeting(x - 10, y, obj_environment) || place_meeting(x - 10, y, obj_enemy)) {
-  x -= hspeed;
-} 
-
-if (place_meeting(x, y - 10, obj_environment) || place_meeting(x, y - 10, obj_enemy)) {
-  y -= vspeed;
-} 
-
 
 // If horizontal speed is NOT 0.
 if(hspeed != 0)
