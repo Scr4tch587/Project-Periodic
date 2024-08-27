@@ -34,6 +34,10 @@ if (!instance_exists(obj_game_over))
 	}
 }
 
+if (global.fade) {
+	global.opacity -= 0.05;
+}
+
 // If the game is over...
 // We do this by checking is an end game screen is present.
 if (!instance_exists(obj_game_over))
@@ -61,16 +65,14 @@ if (!instance_exists(obj_game_over))
 		with (obj_coin) instance_destroy();
 		
 		// If we are on the last wave...
-		if (global.level == 10)
-		{
-			// Create the upgrade screen.
-			instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_template_complete);
-		}
-		else
-		{
 			// Execute function to go to the next wave.
-			instance_create_layer(1920 / 2, 1080 / 2, "UpgradeScreen", obj_upgrade_screen);
-		}
+		alarm[0] = 2 * game_get_speed(gamespeed_fps);
+		alarm[1] = game_get_speed(gamespeed_fps);
+		alarm[3] = game_get_speed(gamespeed_fps)/20;
+		global.winscreen_on = true;
+		audio_play_sound(snd_win, 0, 0, 1.0, undefined, 1.0);
+		global.opacity = 0.5;
+		global.xp = 0;
 	}
 }
 

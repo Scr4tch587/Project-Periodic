@@ -1,4 +1,4 @@
-
+global.winscreen_on = false;
 // Set the experience goal to reach the next level.
 global.xp_goal = 20;
 global.num_enemies = 20;
@@ -7,7 +7,8 @@ global.num_enemies = 20;
 global.xp = 0;
 global.mana = 100;
 global.mana_max = 100;
-
+global.fade = false;
+global.opacity = 1;
 // Set the current level.
 global.level = 1;
 

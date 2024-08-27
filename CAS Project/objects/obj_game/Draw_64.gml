@@ -17,3 +17,19 @@ if (instance_exists(obj_upgrade_screen))
 	exit;
 }
 
+if (global.winscreen_on) {
+
+	// Sets the draw colour and alpha.
+	draw_set_colour(c_white);
+
+	// Sets the heading font.
+	draw_set_font(fnt_huge);
+
+	// Sets the text alighnment.
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+
+	// Draws the heading.
+	draw_text_ext_color(1920 / 2, 275, "WAVE CLEARED", 100, 1000, c_white, c_white, c_white, c_white, global.opacity);
+	
+}

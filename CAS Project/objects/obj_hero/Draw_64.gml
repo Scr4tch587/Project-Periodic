@@ -78,15 +78,18 @@ draw_text(1595, 150, string(global.xp_goal - global.xp) + " ENEMIES LEFT");
 
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.
-draw_sprite(spr_shooting_attack_small, global.shooting[? "unlocked"], 50, 680);
+draw_sprite(spr_item_slot, !global.shooting[? "unlocked"], 50, 560);
+draw_sprite_ext(spr_shooting_icon, !global.shooting[? "unlocked"], 80, 580, 0.335, 0.335, 0, c_white, 1);
 
 // Draw the trail weapon icon, using the "unlocked"
 // property of the trail weapon.
-draw_sprite(spr_trail_attack_small, global.trail[? "unlocked"], 50, 800);
+draw_sprite(spr_item_slot, !global.trail[? "unlocked"], 50, 720);
+draw_sprite_ext(spr_trail_icon, !global.trail[? "unlocked"], 124, 785, 0.350, 0.350, 0, c_white, 1);
 
 // Draw the swipe weapon icon, using the "unlocked"
 // property of the swipe weapon.
-draw_sprite(spr_arcing_attack_small, global.swipe[? "unlocked"], 50, 920);
+draw_sprite(spr_item_slot, !global.chunk[? "unlocked"], 50, 880);
+draw_sprite_ext(spr_chunk_icon, !global.chunk[? "unlocked"], 124, 950, 0.380, 0.380, 0, c_white, 1);
 
 // If the left mouse button is NOT pressed...
 if (!mouse_check_button(mb_left))

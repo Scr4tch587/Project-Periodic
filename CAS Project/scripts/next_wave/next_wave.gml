@@ -4,7 +4,6 @@ function next_wave()
 	global.level += 1;
 	// Subtract experience goal from current experience.
 	// Basically this is the cost of levelling up.
-	global.xp -= global.xp_goal;
 
 	// Increase the experience goal for the next wave.
 	global.xp_goal += 10;
