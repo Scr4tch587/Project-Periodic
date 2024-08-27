@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"lobby_decor_4",
-  "bboxMode":0,
-  "bbox_bottom":199,
+  "bboxMode":2,
+  "bbox_bottom":111,
   "bbox_left":20,
   "bbox_right":105,
   "bbox_top":2,

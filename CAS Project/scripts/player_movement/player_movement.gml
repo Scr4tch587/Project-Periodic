@@ -88,7 +88,7 @@ function player_movement()
 			image_index += 0;
 		}
 	}
-	
+		
 	//Here is the code for stopping collisions with obj_environment for objects underl environment folder
 	// Check for a vertical collision
 	if place_meeting(x, y + vspeed, obj_environment) {

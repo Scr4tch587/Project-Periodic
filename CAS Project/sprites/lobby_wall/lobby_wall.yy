@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"lobby_wall",
-  "bboxMode":0,
-  "bbox_bottom":199,
+  "bboxMode":2,
+  "bbox_bottom":112,
   "bbox_left":0,
   "bbox_right":418,
   "bbox_top":0,

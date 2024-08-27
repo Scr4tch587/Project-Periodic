@@ -41,8 +41,21 @@ if (instance_place(x, y, obj_environment) != noone)
 		// Check if the position is inside a restricted area
 		if (instance_place(_x, _y, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
 		{
-		    break; // Valid position found, break out of the loop
+			if (instance_place(_x + 10, _y, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
+			{
+				if (instance_place(_x - 10, _y, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
+				{
+				    if (instance_place(_x, _y + 10, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
+					{
+						if (instance_place(_x, _y - 10, obj_environment) == noone && is_inside_room(_x, _y, room_width, room_height))
+						{
+						break; // Valid position found, break out of the loop
+						}
+					}
+				}
+			}
 		}
+		
 	
 	}    
 	x = _x
