@@ -6,20 +6,6 @@ depth = -y;
 // Set direction towards the hero.
 direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 
-// Calculate hspeed and vspeed based on current speed and direction
-hspeed = lengthdir_x(speed, direction);
-vspeed = lengthdir_y(speed, direction);
-
-// Attempt to move horizontally
-
-if (place_meeting(x + 10, y, obj_environment) || place_meeting(x + 10, y, obj_enemy) || place_meeting(x - 10, y, obj_environment) || place_meeting(x - 10, y, obj_enemy)) {
-  x -= hspeed;
-} 
-
-if (place_meeting(x, y + 10, obj_environment) || place_meeting(x, y + 10, obj_enemy) || place_meeting(x, y - 10, obj_environment) || place_meeting(x, y - 10, obj_enemy)) {
-  y -= vspeed;
-} 
-
 // If horizontal speed is NOT 0.
 if(hspeed != 0)
 {
