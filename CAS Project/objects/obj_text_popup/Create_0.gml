@@ -3,15 +3,15 @@ text = "NO TEXT";
 
 // Create variable to hold the text color.
 color = c_white;
-
+verticalspeed = random_range(1,8);
 // Create a variable to hold the lifetime of the text.
-lifetime = 60;
+lifetime = 60/(verticalspeed/2);
 
 // Set vertical speed, making the text "float" upwards.
-vspeed -= 2;
+vspeed -= verticalspeed
 
 // Set the depth the a high negative value,
 // drawing it in front of everything else.
-depth = -10000000;
+depth = -1000000000000;
 
 image_alpha = 1;
