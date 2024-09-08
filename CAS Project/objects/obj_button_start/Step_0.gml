@@ -35,12 +35,30 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.electrons = ini_read_real("Save","electrons",0);
 			global.protons = ini_read_real("Save","neutrons",0);
 			global.neutrons = ini_read_real("Save","protons",0);
+			
 			global.chunks = ini_read_string("Save","chunks", "Na");
-			global.na_conc = ini_read_real("Save","Na_conc",0.5);
-			global.k_conc = ini_read_real("Save","K_conc",0.5);
+			
+			global.na_conc = ini_read_real("Save","Na_conc", 1);
+			global.k_conc = ini_read_real("Save","K_conc", 1);
+			global.rb_conc = ini_read_real("Save","Rb_conc", 1);
+			global.cs_conc = ini_read_real("Save","Cs_conc", 1);
+			
 			global.na_unlocked = ini_read_real("Save","Na",1);
 			global.k_unlocked = ini_read_real("Save","K",0);
-			global.concentration = ini_read_real("Save","concentration",0);
+			global.rb_unlocked = ini_read_real("Save", "Rb", 0);
+			global.cs_unlocked = ini_read_real("Save", "Cs", 0);
+			
+			global.gas = ini_read_string("Save", "gas", "Br2");
+			
+			global.br2_conc = ini_read_real("Save","Br2_conc", 1);
+			global.cl2_conc = ini_read_real("Save","Cl2_conc", 1);
+			global.fl2_conc = ini_read_real("Save","Fl2_conc", 1);
+			global.cocl2_conc = ini_read_real("Save","COCl2_conc", 1);
+			
+			global.br2_unlocked = ini_read_real("Save","Br2", 1);
+			global.cl2_unlocked = ini_read_real("Save","Cl2", 1);
+			global.fl2_unlocked = ini_read_real("Save","Fl2", 1);
+			global.cocl2_unlocked = ini_read_real("Save","COCl2", 1);
 
 			ini_close(); 
 			

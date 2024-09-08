@@ -76,10 +76,13 @@ draw_text(1595, 100, "Wave " + string(global.level));
 draw_set_font(fnt_small);
 draw_text(1595, 150, string(global.xp_goal - global.xp) + " ENEMIES LEFT");
 
+draw_set_font(fnt_medium);
+draw_set_color(c_white)
+
 // Draw the shooting weapon icon, using the "unlocked"
 // property of the shooting weapon.
 draw_sprite(spr_item_slot, !global.shooting[? "unlocked"], 50, 560);
-draw_sprite_ext(spr_shooting_icon, !global.shooting[? "unlocked"], 80, 580, 0.335, 0.335, 0, c_white, 1);
+draw_sprite_ext(spr_shooting_icon, !global.shooting[? "unlocked"], 80, 579, 0.335, 0.335, 0, c_white, 1);
 
 // Draw the trail weapon icon, using the "unlocked"
 // property of the trail weapon.
@@ -90,6 +93,12 @@ draw_sprite_ext(spr_trail_icon, !global.trail[? "unlocked"], 124, 785, 0.350, 0.
 // property of the swipe weapon.
 draw_sprite(spr_item_slot, !global.chunk[? "unlocked"], 50, 880);
 draw_sprite_ext(spr_chunk_icon, !global.chunk[? "unlocked"], 124, 950, 0.380, 0.380, 0, c_white, 1);
+
+draw_set_halign(fa_left);
+draw_text(170, 575, "HCl");
+draw_text(170, 735, "Cl");
+draw_text_transformed(200, 750, "2", 0.5, 0.5, 0);
+draw_text(170, 895, global.chunks);
 
 // If the left mouse button is NOT pressed...
 if (!mouse_check_button(mb_left))

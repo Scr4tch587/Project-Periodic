@@ -76,6 +76,7 @@
     {"id":{"name":"fnt_medium","path":"fonts/fnt_medium/fnt_medium.yy",},},
     {"id":{"name":"fnt_small_medium","path":"fonts/fnt_small_medium/fnt_small_medium.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
+    {"id":{"name":"fnt_subscript","path":"fonts/fnt_subscript/fnt_subscript.yy",},},
     {"id":{"name":"Documentation","path":"notes/Documentation/Documentation.yy",},},
     {"id":{"name":"horizontal_wall_2","path":"objects/horizontal_wall_2/horizontal_wall_2.yy",},},
     {"id":{"name":"horizontal_wall","path":"objects/horizontal_wall/horizontal_wall.yy",},},
