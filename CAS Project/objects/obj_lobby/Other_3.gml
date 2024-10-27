@@ -7,6 +7,19 @@ ini_write_string("Save", "chunks" ,global.chunks);
 
 ini_write_string("Save", "Na" ,global.na_unlocked);
 ini_write_string("Save", "K" ,global.k_unlocked);
+ini_write_string("Save", "Rb" ,global.na_unlocked);
+ini_write_string("Save", "Cs" ,global.k_unlocked);
+
+ini_write_string("Save", "H2SO4" ,global.h2so4_unlocked);
+ini_write_string("Save", "HCl" ,global.hcl_unlocked);
+ini_write_string("Save", "HF" ,global.hf_unlocked);
+ini_write_string("Save", "HNO3" ,global.hno3_unlocked);
+
+ini_write_string("Save", "br2" ,global.br2_unlocked);
+ini_write_string("Save", "cl2" ,global.cl2_unlocked);
+ini_write_string("Save", "cocl2" ,global.cocl2_unlocked);
+ini_write_string("Save", "fl2" ,global.fl2_unlocked);
+
 
 ini_close();
 			

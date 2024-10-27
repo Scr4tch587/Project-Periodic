@@ -7,12 +7,14 @@
 
 //	ini_close(); 
 //} 
-	
-draw_text(1920 / 2, 250, "COINS: " + string(global.coins));
-draw_text(1920 / 2, 275, "ELECTRONS: " + string(global.electrons));
-draw_text(1920 / 2, 300, "PROTONS: " + string(global.protons));
-draw_text(1920 / 2, 325, "NEUTRONS: " + string(global.neutrons));
-draw_text(1920 / 2, 350, "CHUNK: " + global.chunks);
+	// Set font.
+draw_set_font(fnt_small);
+
+draw_text(1920 / 2 - 300, 250, "COINS: " + string(global.coins));
+draw_text(1920 / 2 - 300, 275, "ELECTRONS: " + string(global.electrons));
+draw_text(1920 / 2 - 300, 300, "PROTONS: " + string(global.protons));
+draw_text(1920 / 2 - 300, 325, "NEUTRONS: " + string(global.neutrons));
+draw_text(1920 / 2 - 300, 350, "CHUNK: " + global.chunks);
 
 
 

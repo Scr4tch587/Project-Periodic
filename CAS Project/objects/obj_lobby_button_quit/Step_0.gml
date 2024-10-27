@@ -32,7 +32,6 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			ini_write_real("Save", "neutrons" ,global.neutrons);
 			ini_write_real("Save", "protons" ,global.protons);
 			ini_write_real("Save", "electrons" ,global.electrons);
-			ini_write_real("Save", "concentration" ,global.concentration);
 			ini_write_string("Save", "chunks" ,global.chunks);
 			
 			ini_close();

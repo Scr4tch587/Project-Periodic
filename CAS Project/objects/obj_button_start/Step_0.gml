@@ -59,6 +59,18 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.cl2_unlocked = ini_read_real("Save","Cl2", 1);
 			global.fl2_unlocked = ini_read_real("Save","Fl2", 1);
 			global.cocl2_unlocked = ini_read_real("Save","COCl2", 1);
+			
+			global.puddle = ini_read_string("Save", "puddle", "HCl");
+			
+			global.hcl_conc = ini_read_real("Save","HCl_conc", 1);
+			global.h2so4_conc = ini_read_real("Save","H2SO4_conc", 1);
+			global.hno3_conc = ini_read_real("Save","HNO3_conc", 1);
+			global.hf_conc = ini_read_real("Save","HF_conc", 1);
+			
+			global.hcl_unlocked = ini_read_real("Save","HCl", 1);
+			global.h2so4_unlocked = ini_read_real("Save","H2SO4", 1);
+			global.hno3_unlocked = ini_read_real("Save","HNO3", 1);
+			global.hf_unlocked = ini_read_real("Save","HF", 1);
 
 			ini_close(); 
 			
