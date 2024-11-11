@@ -70,7 +70,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"CAS Project",
   "resources":[
@@ -86,6 +86,8 @@
     {"id":{"name":"horizontal_wall_2","path":"objects/horizontal_wall_2/horizontal_wall_2.yy",},},
     {"id":{"name":"horizontal_wall","path":"objects/horizontal_wall/horizontal_wall.yy",},},
     {"id":{"name":"obj_atom","path":"objects/obj_atom/obj_atom.yy",},},
+    {"id":{"name":"obj_bohr","path":"objects/obj_bohr/obj_bohr.yy",},},
+    {"id":{"name":"obj_bohrdynamic_screen","path":"objects/obj_bohrdynamic_screen/obj_bohrdynamic_screen.yy",},},
     {"id":{"name":"obj_button_audio","path":"objects/obj_button_audio/obj_button_audio.yy",},},
     {"id":{"name":"obj_button_exit","path":"objects/obj_button_exit/obj_button_exit.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
@@ -292,6 +294,7 @@
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
     {"id":{"name":"Sprite97","path":"sprites/Sprite97/Sprite97.yy",},},
     {"id":{"name":"Sprite98","path":"sprites/Sprite98/Sprite98.yy",},},
+    {"id":{"name":"Sprite99","path":"sprites/Sprite99/Sprite99.yy",},},
     {"id":{"name":"the_goddamn_floor","path":"sprites/the_goddamn_floor/the_goddamn_floor.yy",},},
     {"id":{"name":"TITLE","path":"sprites/TITLE/TITLE.yy",},},
     {"id":{"name":"wall_horizontal_2","path":"sprites/wall_horizontal_2/wall_horizontal_2.yy",},},

@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interact",
+  "%Name":"obj_bohr",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interact",
+  "name":"obj_bohr",
   "overriddenProperties":[],
   "parent":{
     "name":"Interactables",
     "path":"folders/Objects/Lobby/Interactables.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interact",
+    "path":"objects/obj_interact/obj_interact.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"lobby_decor_9",
+    "path":"sprites/lobby_decor_9/lobby_decor_9.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
