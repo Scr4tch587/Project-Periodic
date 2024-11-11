@@ -70,7 +70,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"CAS Project",
   "resources":[
@@ -258,6 +258,8 @@
     {"id":{"name":"spr_joystick_big","path":"sprites/spr_joystick_big/spr_joystick_big.yy",},},
     {"id":{"name":"spr_joystick_small","path":"sprites/spr_joystick_small/spr_joystick_small.yy",},},
     {"id":{"name":"spr_neutron","path":"sprites/spr_neutron/spr_neutron.yy",},},
+    {"id":{"name":"spr_new_hero","path":"sprites/spr_new_hero/spr_new_hero.yy",},},
+    {"id":{"name":"spr_new_run","path":"sprites/spr_new_run/spr_new_run.yy",},},
     {"id":{"name":"spr_pigun_attack","path":"sprites/spr_pigun_attack/spr_pigun_attack.yy",},},
     {"id":{"name":"spr_pigun_hit","path":"sprites/spr_pigun_hit/spr_pigun_hit.yy",},},
     {"id":{"name":"spr_pigun_walk","path":"sprites/spr_pigun_walk/spr_pigun_walk.yy",},},
