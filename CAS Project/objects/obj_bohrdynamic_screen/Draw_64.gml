@@ -5,7 +5,7 @@ draw_set_alpha(0.8);
 draw_rectangle(x - 1400, y - 525, x + 400, y + 500, 0);
 
 draw_set_font(fnt_large);
-
+draw_sprite_ext(spr_bohr4, 0, 1000, 600, 3, 3, 0, c_white, 1);
 // Sets the text alighnment.
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);

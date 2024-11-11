@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"hf_unlock",
   "isCompatibility":false,
   "isDnD":false,
