@@ -56,9 +56,9 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.cocl2_conc = ini_read_real("Save","COCl2_conc", 1);
 			
 			global.br2_unlocked = ini_read_real("Save","Br2", 1);
-			global.cl2_unlocked = ini_read_real("Save","Cl2", 1);
-			global.fl2_unlocked = ini_read_real("Save","Fl2", 1);
-			global.cocl2_unlocked = ini_read_real("Save","COCl2", 1);
+			global.cl2_unlocked = ini_read_real("Save","Cl2", 0);
+			global.fl2_unlocked = ini_read_real("Save","Fl2", 0);
+			global.cocl2_unlocked = ini_read_real("Save","COCl2", 0);
 			
 			global.puddle = ini_read_string("Save", "puddle", "HCl");
 			
@@ -67,10 +67,10 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.hno3_conc = ini_read_real("Save","HNO3_conc", 1);
 			global.hf_conc = ini_read_real("Save","HF_conc", 1);
 			
-			global.hcl_unlocked = ini_read_real("Save","HCl", 1);
-			global.h2so4_unlocked = ini_read_real("Save","H2SO4", 1);
-			global.hno3_unlocked = ini_read_real("Save","HNO3", 1);
-			global.hf_unlocked = ini_read_real("Save","HF", 1);
+			global.hcl_unlocked = ini_read_real("Save","HCl", 0);
+			global.h2so4_unlocked = ini_read_real("Save","H2SO4", 0);
+			global.hno3_unlocked = ini_read_real("Save","HNO3", 0);
+			global.hf_unlocked = ini_read_real("Save","HF", 0);
 
 			ini_close(); 
 			

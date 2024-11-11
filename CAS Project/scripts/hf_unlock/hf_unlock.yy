@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"hf_unlock",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"hf_unlock",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

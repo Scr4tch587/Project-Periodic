@@ -2,6 +2,19 @@
 function next_wave() 
 {	
 	global.level += 1;
+	if (global.level == 5) {
+		if (!global.hf_unlocked) {
+			hf_unlock()
+		}
+		ini_open("save_file.ini"); 
+				
+ini_write_real("Save",  "HCl", 0);
+ini_write_real("Save",  "H2SO4", 0);
+ini_write_real("Save",  "HNO3", 0);
+ini_write_real("Save",  "HF", 0);
+
+ini_close();
+	}
 	// Subtract experience goal from current experience.
 	// Basically this is the cost of levelling up.
 

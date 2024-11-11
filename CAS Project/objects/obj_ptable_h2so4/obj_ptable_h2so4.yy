@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Puddle",
-    "path":"folders/Objects/Lobby/Interactables/Periodic Table/Puddle.yy",
+    "path":"folders/Objects/Lobby/Interactables/Compound View/Puddle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

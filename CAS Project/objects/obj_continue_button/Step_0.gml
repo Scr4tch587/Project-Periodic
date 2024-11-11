@@ -27,11 +27,11 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	
 			// Destroys upgrade screen.
 			with(obj_upgrade_screen) instance_destroy();
+			with(obj_HF_upgrade_screen) instance_destroy();
 			
 			// Destroys self.
 			with(obj_continue_button) instance_destroy();
-			
-			next_wave()
+			global.paused = 0;
 		}
 	}
 }

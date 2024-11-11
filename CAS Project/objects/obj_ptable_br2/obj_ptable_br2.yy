@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Gas",
-    "path":"folders/Objects/Lobby/Interactables/Periodic Table/Gas.yy",
+    "path":"folders/Objects/Lobby/Interactables/Compound View/Gas.yy",
   },
   "parentObjectId":null,
   "persistent":false,

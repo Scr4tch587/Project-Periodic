@@ -23,9 +23,11 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
-		{
-			global.selected = "H2SO4";
-			global.type = "pudddle";
+		{	
+			if (global.h2so4_unlocked) {
+				global.selected = "H2SO4";
+				global.type = "puddle";
+			}
 		}
 	}
 }

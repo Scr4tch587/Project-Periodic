@@ -24,8 +24,10 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-			global.selected = "cocl2";
-			global.type = "gas";
+			if (global.cocl2_unlocked) {
+				global.selected = "cocl2";
+				global.type = "gas";
+			}
 		}
 	}
 }

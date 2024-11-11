@@ -25,7 +25,7 @@
     {"name":"inst_19C2BFB","path":"rooms/rm_lobby/rm_lobby.yy",},
     {"name":"inst_3255B861","path":"rooms/rm_lobby/rm_lobby.yy",},
     {"name":"inst_6A5FFE56","path":"rooms/rm_lobby/rm_lobby.yy",},
-    {"name":"inst_50A349A3","path":"rooms/rm_lobby/rm_lobby.yy",},
+    {"name":"inst_45ED8EB1","path":"rooms/rm_lobby/rm_lobby.yy",},
   ],
   "isDnd":false,
   "layers":[
