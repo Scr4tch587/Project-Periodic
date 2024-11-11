@@ -14,6 +14,6 @@ hitpoints_max = 5 * global.enemy_health_bonus;
 hitpoints = hitpoints_max;
 
 // Set sprites for this enemy type.
-walk_sprite = spr_pumpkill_walk;
-attack_sprite = spr_pumpkill_attack;
-hit_sprite = spr_pumpkill_hit;
+walk_sprite = spr_book_walk;
+attack_sprite = spr_book_attack;
+hit_sprite = spr_book_hit;

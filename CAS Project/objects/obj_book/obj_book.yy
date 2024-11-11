@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_pumpkill",
+  "%Name":"obj_book",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_pumpkill",
+  "name":"obj_book",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pumpkill_walk",
-    "path":"sprites/spr_pumpkill_walk/spr_pumpkill_walk.yy",
+    "name":"spr_book_walk",
+    "path":"sprites/spr_book_walk/spr_book_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,
