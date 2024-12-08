@@ -33,6 +33,10 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.k_conc = 1;
 			global.na_unlocked = 1;
 			global.k_unlocked = 0;
+			global.rb_conc = 1;
+			global.cs_conc = 1;
+			global.rb_unlocked = 10
+			global.cs_unlocked = 0;
 			
 			ini_open("save_file.ini"); 
 				

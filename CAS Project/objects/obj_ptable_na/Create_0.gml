@@ -2,4 +2,5 @@
 is_clicked = false;
 
 // Variable used for button scaling.
-target_scale = 1.0;
+border_on = false;
+target_scale = 1.0

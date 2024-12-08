@@ -1,5 +1,5 @@
 // If the game is NOT over...
-if (!instance_exists(obj_game_over))
+if (!instance_exists(obj_game_over) && !instance_exists(obj_win_screen))
 {
 	// If the hero has run out of hitpoints...
 	if (obj_hero.hitpoints <= 0)
