@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"CAS Project",
   "resources":[
@@ -298,6 +298,7 @@
     {"id":{"name":"spr_shooting","path":"sprites/spr_shooting/spr_shooting.yy",},},
     {"id":{"name":"spr_sound_button","path":"sprites/spr_sound_button/spr_sound_button.yy",},},
     {"id":{"name":"spr_splash_screen","path":"sprites/spr_splash_screen/spr_splash_screen.yy",},},
+    {"id":{"name":"spr_teacher","path":"sprites/spr_teacher/spr_teacher.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"spr_trail_attack_big","path":"sprites/spr_trail_attack_big/spr_trail_attack_big.yy",},},
     {"id":{"name":"spr_trail_attack_small","path":"sprites/spr_trail_attack_small/spr_trail_attack_small.yy",},},
@@ -310,6 +311,8 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
+    {"id":{"name":"Sprite110","path":"sprites/Sprite110/Sprite110.yy",},},
+    {"id":{"name":"Sprite111","path":"sprites/Sprite111/Sprite111.yy",},},
     {"id":{"name":"Sprite97","path":"sprites/Sprite97/Sprite97.yy",},},
     {"id":{"name":"Sprite98","path":"sprites/Sprite98/Sprite98.yy",},},
     {"id":{"name":"Sprite99","path":"sprites/Sprite99/Sprite99.yy",},},

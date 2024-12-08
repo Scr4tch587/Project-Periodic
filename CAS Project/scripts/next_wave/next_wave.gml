@@ -7,11 +7,6 @@ function next_wave()
 			hf_unlock()
 		}
 		ini_open("save_file.ini"); 
-				
-ini_write_real("Save",  "HCl", 0);
-ini_write_real("Save",  "H2SO4", 0);
-ini_write_real("Save",  "HNO3", 0);
-ini_write_real("Save",  "HF", 0);
 
 ini_close();
 	}

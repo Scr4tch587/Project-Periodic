@@ -30,6 +30,8 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			audio_play_sound(snd_ui_select, 0, 0, 1.0, undefined, 1.0);
 			
 			ini_open("save_file.ini"); 
+
+			ini_write_real("Save", "HF", 0);
 	
 			global.coins = ini_read_real("Save","coins",0); //load value of coins 
 			global.electrons = ini_read_real("Save","electrons",0);

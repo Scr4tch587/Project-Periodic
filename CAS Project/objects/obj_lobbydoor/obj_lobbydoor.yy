@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_lobbydoor",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_lobbyhero","path":"objects/obj_lobbyhero/obj_lobbyhero.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_lobbyhero","path":"objects/obj_lobbyhero/obj_lobbyhero.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_lobbydoor",
