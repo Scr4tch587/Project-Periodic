@@ -15,11 +15,10 @@ ini_write_string("Save", "HCl" ,global.hcl_unlocked);
 ini_write_string("Save", "HF" ,global.hf_unlocked);
 ini_write_string("Save", "HNO3" ,global.hno3_unlocked);
 
-ini_write_string("Save", "br2" ,global.br2_unlocked);
-ini_write_string("Save", "cl2" ,global.cl2_unlocked);
-ini_write_string("Save", "cocl2" ,global.cocl2_unlocked);
-ini_write_string("Save", "fl2" ,global.fl2_unlocked);
-
+ini_write_string("Save", "Br2" ,global.br2_unlocked);
+ini_write_string("Save", "Cl2" ,global.cl2_unlocked);
+ini_write_string("Save", "COCl2" ,global.cocl2_unlocked);
+ini_write_string("Save", "F2" ,global.f2_unlocked);
 
 ini_close();
 			

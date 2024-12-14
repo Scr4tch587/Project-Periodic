@@ -33,7 +33,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 
 			ini_write_real("Save", "HF", 0);
 	
-			global.coins = ini_read_real("Save","coins",0); //load value of coins 
+			global.coins = ini_read_real("Save","coins",0);
 			global.electrons = ini_read_real("Save","electrons",0);
 			global.protons = ini_read_real("Save","neutrons",0);
 			global.neutrons = ini_read_real("Save","protons",0);
@@ -54,12 +54,12 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			
 			global.br2_conc = ini_read_real("Save","Br2_conc", 1);
 			global.cl2_conc = ini_read_real("Save","Cl2_conc", 1);
-			global.fl2_conc = ini_read_real("Save","Fl2_conc", 1);
+			global.f2_conc = ini_read_real("Save","Fl2_conc", 1);
 			global.cocl2_conc = ini_read_real("Save","COCl2_conc", 1);
 			
 			global.br2_unlocked = ini_read_real("Save","Br2", 1);
 			global.cl2_unlocked = ini_read_real("Save","Cl2", 0);
-			global.fl2_unlocked = ini_read_real("Save","Fl2", 0);
+			global.f2_unlocked = ini_read_real("Save","F2", 0);
 			global.cocl2_unlocked = ini_read_real("Save","COCl2", 0);
 			
 			global.puddle = ini_read_string("Save", "puddle", "HCl");
