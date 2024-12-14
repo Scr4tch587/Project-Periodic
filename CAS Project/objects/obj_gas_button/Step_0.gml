@@ -24,7 +24,9 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{
-			instance_create_layer(x, y, "UpgradeScreen2", obj_chunk_screen);
+			instance_create_layer(x, y, "UpgradeScreen2", obj_gas_screen);
+			with(obj_acid_screen) instance_destroy();
+			with(obj_chunk_screen) instance_destroy();
 		}
 	}
 }

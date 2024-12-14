@@ -8,34 +8,34 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 
-draw_text(x + 50, y - 400, global.selected);
+draw_text_transformed(x - 5, y - 440, global.selected, 1.4, 1.4, 0);
 
-draw_set_font(fnt_small);
+draw_set_font(fnt_medium);
 draw_set_halign(fa_left);
 ini_open("save_file.ini"); 
 
 if (ini_read_real("Save", global.selected, 0)) {
 	if (global.type == "chunk") {
-		draw_text(x - 200, y + 50, "Tier 2");
-		draw_text(x - 200, y + 100, "State: Solid");
-		draw_text(x - 200, y + 150, "Type: Group 1 Alkali Metal");
+		draw_sprite_ext(spr_chunk, 1, x - 10, y - 280, 1.1, 1.1, 0, c_white, 1);
+		draw_text_transformed(x - 135, y - 120, "Solid", 0.85, 0.85, 0);
+		draw_text_transformed(x - 130, y - 64, "Alkali Metal", 0.85, 0.85, 0);
 		ini_open("save_file.ini"); 
-		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
+		draw_text_transformed(x - 125, y - 8, string(ini_read_real("Save",global.selected + "_conc",0.5)*100) + "%", 0.85, 0.85, 0);
+		draw_text_transformed(x - 100, y + 48, string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)), 0.85, 0.85, 0);
 	} else if (global.type == "gas") {
-		draw_text(x - 200, y + 50, "Tier 2");
-		draw_text(x - 200, y + 100, "State: Gas");
-		draw_text(x - 200, y + 150, "Type: ");
+		draw_sprite_ext(spr_chunk, 1, x - 10, y - 280, 1.1, 1.1, 0, c_white, 1);
+		draw_text_transformed(x - 135, y - 120, "Solid", 0.85, 0.85, 0);
+		draw_text_transformed(x - 130, y - 64, "Alkali Metal", 0.85, 0.85, 0);
 		ini_open("save_file.ini"); 
-		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
+		draw_text_transformed(x - 125, y - 8, string(ini_read_real("Save",global.selected + "_conc",0.5)*100) + "%", 0.85, 0.85, 0);
+		draw_text_transformed(x - 100, y + 48, string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)), 0.85, 0.85, 0);
 	} else if (global.type == "puddle") {
-		draw_text(x - 200, y + 50, "Tier 2");
-		draw_text(x - 200, y + 100, "State: Liquid");
-		draw_text(x - 200, y + 150, "Type: Acid");
+		draw_sprite_ext(spr_chunk, 1, x - 10, y - 280, 1.1, 1.1, 0, c_white, 1);
+		draw_text_transformed(x - 135, y - 120, "Solid", 0.85, 0.85, 0);
+		draw_text_transformed(x - 130, y - 64, "Alkali Metal", 0.85, 0.85, 0);
 		ini_open("save_file.ini"); 
-		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
+		draw_text_transformed(x - 125, y - 8, string(ini_read_real("Save",global.selected + "_conc",0.5)*100) + "%", 0.85, 0.85, 0);
+		draw_text_transformed(x - 100, y + 48, string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)), 0.85, 0.85, 0);
 	}
 }
 

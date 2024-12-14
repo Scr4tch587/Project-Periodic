@@ -9,6 +9,22 @@ global.mana = 100;
 global.mana_max = 100;
 global.fade = false;
 global.opacity = 1;
+global.chunk = "Na";
+
+ini_open("save_file.ini"); 
+if (ini_read_real("Save", "HF", 0)) {
+	global.acid = "HF";
+} else {
+	global.acid = "None";
+}
+
+if (ini_read_real("Save", "Br2", 0)) {
+	global.gas = "Br2";
+} else {
+	global.gas = "None";
+}
+
+ini_close();
 // Set the current level.
 global.level = 1;
 

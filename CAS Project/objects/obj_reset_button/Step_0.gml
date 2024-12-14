@@ -35,8 +35,26 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.k_unlocked = 0;
 			global.rb_conc = 1;
 			global.cs_conc = 1;
-			global.rb_unlocked = 10
+			global.rb_unlocked = 0;
 			global.cs_unlocked = 0;
+			
+			global.hf_conc = 1;
+			global.hcl_conc = 1;
+			global.hf_unlocked = 1;
+			global.hcl_unlocked = 1;
+			global.h2so4_conc = 1;
+			global.hno3_conc = 1;
+			global.h2so4_unlocked = 1;
+			global.hno3_unlocked = 1;
+			
+			global.br2_conc = 1;
+			global.cl2_conc = 1;
+			global.br2_unlocked = 1;
+			global.cl2_unlocked = 1;
+			global.cocl2_conc = 1;
+			global.f2_conc = 1;
+			global.cocl2_unlocked = 1;
+			global.f2_unlocked = 1;
 			
 			ini_open("save_file.ini"); 
 				
@@ -47,8 +65,28 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			ini_write_string("Save", "chunks", global.chunks);
 			ini_write_real("Save", "Na_conc", 1);
 			ini_write_real("Save", "K_conc", 1);
+			ini_write_real("Save", "Rb_conc", 1);
+			ini_write_real("Save", "Cs_conc", 1);
 			ini_write_real("Save", "Na", 1);
 			ini_write_real("Save", "K", 0);
+			ini_write_real("Save", "Rb", 0);
+			ini_write_real("Save", "Cs", 0);
+			ini_write_real("Save", "H2SO4_conc", 1);
+			ini_write_real("Save", "HCl_conc", 1);
+			ini_write_real("Save", "HF_conc", 1);
+			ini_write_real("Save", "HNO3_conc", 1);
+			ini_write_real("Save", "H2SO4", 1);
+			ini_write_real("Save", "HCl", 1);
+			ini_write_real("Save", "HF", 1);
+			ini_write_real("Save", "HNO3", 1);
+			ini_write_real("Save", "Br2_conc", 1);
+			ini_write_real("Save", "Cl2_conc", 1);
+			ini_write_real("Save", "COCl2_conc", 1);
+			ini_write_real("Save", "F2_conc", 1);
+			ini_write_real("Save", "Br2", 1);
+			ini_write_real("Save", "Cl2", 1);
+			ini_write_real("Save", "COCl2", 1);
+			ini_write_real("Save", "F2", 1);
 			
 			ini_close();
 		}

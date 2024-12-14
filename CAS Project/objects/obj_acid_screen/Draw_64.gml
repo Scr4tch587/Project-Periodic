@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_button_grey, 1, x, y, 1.7, 1.5, 0, c_white, 1);
