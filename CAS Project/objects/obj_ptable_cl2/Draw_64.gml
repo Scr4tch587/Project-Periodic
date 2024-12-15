@@ -12,5 +12,6 @@ draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 draw_set_alpha(1.0);
 
-// Draw reroll text.
-draw_text_transformed(x + 50, y + 50, "Cl2", image_xscale, image_yscale, image_angle);
+if border_on {
+	draw_sprite_ext(spr_ptable_square_border, 1, x - 10, y - 7, 1.8, 1.8, 0, c_white, 1);
+}
