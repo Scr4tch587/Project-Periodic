@@ -33,11 +33,11 @@
     {"$GMFolder":"","%Name":"Lobby","folderPath":"folders/Objects/Lobby.yy","name":"Lobby","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Interactables","folderPath":"folders/Objects/Lobby/Interactables.yy","name":"Interactables","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Compound View","folderPath":"folders/Objects/Lobby/Interactables/Compound View.yy","name":"Compound View","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Gas","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table/Gas.yy","name":"Gas","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Puddle","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table/Puddle.yy","name":"Puddle","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Objects/Lobby/Interactables/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Periodic Table","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table.yy","name":"Periodic Table","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Chunks","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table/Chunks.yy","name":"Chunks","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Objects/Lobby/Interactables/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Gas","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table/Gas.yy","name":"Gas","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Puddle","folderPath":"folders/Objects/Lobby/Interactables/Periodic Table/Puddle.yy","name":"Puddle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Objects/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -76,7 +76,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"CAS Project",
   "resources":[
