@@ -1,8 +1,16 @@
-// Set frame.
-image_index = 1;
-
 // Draw self, this is the button sprite.
 draw_self();
 
-// Draw the exit icon.
-draw_sprite_ext(spr_exit_button, 0, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+// Set font.
+draw_set_font(fnt_small);
+
+// Center align drawn text horizontally and vertically.
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+
+// Set color to opaque black.
+draw_set_colour(c_black);
+draw_set_alpha(1.0);
+
+// Draw reroll text.
+draw_text_transformed(x + 255, y + 70, "QUIT", 4*image_xscale, 4.5*image_yscale, image_angle);
