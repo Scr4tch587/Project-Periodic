@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rooster",
+  "%Name":"obj_green_monster",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_rooster",
+  "name":"obj_green_monster",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rooster_walk",
-    "path":"sprites/spr_rooster_walk/spr_rooster_walk.yy",
+    "name":"spr_green_walk",
+    "path":"sprites/spr_green_walk/spr_green_walk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

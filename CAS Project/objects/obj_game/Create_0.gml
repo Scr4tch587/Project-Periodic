@@ -105,7 +105,7 @@ spawn_enemy = function()
 	{
 		// Change the enemy type to either
 		// pigun, pumpkill or rooster.
-		_enemy = choose(obj_cat, obj_book, obj_rooster);
+		_enemy = choose(obj_cat, obj_book, obj_green_monster);
 	}
 
 	// We want to spawn enemyes around the player.

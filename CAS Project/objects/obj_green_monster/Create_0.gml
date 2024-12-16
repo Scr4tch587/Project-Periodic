@@ -8,6 +8,6 @@ speed = 2;
 image_speed = 1;
 
 // Set sprites for this enemy type.
-walk_sprite = spr_rooster_walk;
-attack_sprite = spr_rooster_attack;
-hit_sprite = spr_rooster_hit;
+walk_sprite = spr_green_walk;
+attack_sprite = spr_green_attack;
+hit_sprite = spr_green_hit;
