@@ -77,7 +77,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.6.1.160",
   },
   "name":"CAS Project",
   "resources":[
@@ -109,6 +109,7 @@
     {"id":{"name":"obj_button_start","path":"objects/obj_button_start/obj_button_start.yy",},},
     {"id":{"name":"obj_camera_hero","path":"objects/obj_camera_hero/obj_camera_hero.yy",},},
     {"id":{"name":"obj_camera_lobby_hero","path":"objects/obj_camera_lobby_hero/obj_camera_lobby_hero.yy",},},
+    {"id":{"name":"obj_cat","path":"objects/obj_cat/obj_cat.yy",},},
     {"id":{"name":"obj_chunk_button","path":"objects/obj_chunk_button/obj_chunk_button.yy",},},
     {"id":{"name":"obj_chunk_screen","path":"objects/obj_chunk_screen/obj_chunk_screen.yy",},},
     {"id":{"name":"obj_cl2_button","path":"objects/obj_cl2_button/obj_cl2_button.yy",},},
@@ -160,7 +161,6 @@
     {"id":{"name":"obj_next_wave","path":"objects/obj_next_wave/obj_next_wave.yy",},},
     {"id":{"name":"obj_pause_button","path":"objects/obj_pause_button/obj_pause_button.yy",},},
     {"id":{"name":"obj_pause_screen","path":"objects/obj_pause_screen/obj_pause_screen.yy",},},
-    {"id":{"name":"obj_pigun","path":"objects/obj_pigun/obj_pigun.yy",},},
     {"id":{"name":"obj_plant","path":"objects/obj_plant/obj_plant.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"obj_proton","path":"objects/obj_proton/obj_proton.yy",},},
