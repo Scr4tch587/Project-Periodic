@@ -14,3 +14,6 @@ draw_set_alpha(1.0);
 
 // Draw reroll text.
 draw_text_transformed(x + 255, y + 70, "PLAY", 4*image_xscale, 4.5*image_yscale, image_angle);
+
+draw_set_colour(c_white);
+draw_text_transformed(x + 1375, y - 450, "DEMO", 5, 9, image_angle);

@@ -14,6 +14,7 @@ nearest_distance = 1000;
 _shootcd = 240;
 _gascd = 240;
 _watercd = 10;
+_swipecd = 100;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
@@ -37,22 +38,10 @@ hero_shoot = function() {
 // Function for the swiping weapon
 hero_swipe = function()
 {
-	if (keyboard_check_pressed(vk_space))
-	{	
-		// If the nearest enemy is within 250 pixels...
-		if (nearest_distance < 250)
-		{
-			// Reset the cooldown for this weapon.
-			hero_swipe_cooldown = max(global.swipe[? "attack_speed"], 1) * (1 / 60);
-
-			// Execute the function that handles this weapon.
-			swipe_attack();
-		}
-		// The nearest enemy is too far away, but we don't want to fully reset the cooldown...
-		else
-		{
-			// Set the cooldown to test again next frame.
-			hero_swipe_cooldown = 1 * (1 / 60);
+	if (keyboard_check_pressed(vk_space) and _swipecd >= 100) {	
+		if (nearest_distance < 250) {	
+			swipe_attack(); // Execute the function to handle this weapon.
+			_swipecd = 0;
 		}
 	}
 }

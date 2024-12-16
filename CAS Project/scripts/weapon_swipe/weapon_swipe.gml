@@ -10,7 +10,7 @@ function weapon_swipe_reset()
 {
 	// Reset swipe weapon values.
 	ds_map_replace(global.swipe, "damage", 1);
-	ds_map_replace(global.swipe, "attack_speed", 60);
+	ds_map_replace(global.swipe, "attack_speed", 1);
 	ds_map_replace(global.swipe, "unlocked", false);
 }
 

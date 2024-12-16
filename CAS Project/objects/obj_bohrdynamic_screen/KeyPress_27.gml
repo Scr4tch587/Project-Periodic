@@ -1,0 +1,1 @@
+with(obj_bohrdynamic_screen) instance_destroy();

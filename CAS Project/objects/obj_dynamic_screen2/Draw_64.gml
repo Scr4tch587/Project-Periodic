@@ -1,38 +1,21 @@
-draw_set_colour(c_white);
-draw_set_alpha(0.8);
 
-// Draws rectangle over screen.
-draw_rectangle(x - 300, y - 525, x + 400, y + 500, 0);
-
-draw_set_font(fnt_large);
-
-// Sets the text alighnment.
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_colour(c_black);
 
-draw_text(x + 50, y - 400, global.selected);
+draw_sprite_ext(spr_button_green, 1, x -  500, y - 20, 7, 10, 0, c_white, 1);
 
 draw_set_font(fnt_small);
-draw_set_halign(fa_left);
-ini_open("save_file.ini"); 
+draw_text_transformed(x - 470, y - 420, "PROJECT PERIODIC", 4,4, 0);
 
-if (ini_read_real("Save", global.selected, 0)) {
-	if (global.type == "gas") {
-		draw_text(x - 200, y + 50, "Tier 2");
-		draw_text(x - 200, y + 100, "State: Gas");
-		draw_text(x - 200, y + 150, "Type: ");
-		ini_open("save_file.ini"); 
-		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
-	} else if (global.type == "puddle") {
-		draw_text(x - 200, y + 50, "Tier 2");
-		draw_text(x - 200, y + 100, "State: Liquid");
-		draw_text(x - 200, y + 150, "Type: Acid");
-		ini_open("save_file.ini"); 
-		draw_text(x - 200, y + 200, "Concentration: " + string(ini_read_real("Save",global.selected + "_conc",0.5)));
-		draw_text(x - 200, y + 250, "Damage: " + string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)));
-	}
-}
+draw_set_font(fnt_medium);
+draw_text_transformed(x - 470, y - 200, "Welcome to the demo of our CAS Project, PROJECT PERIODIC", 1, 1, 0);
 
-ini_close();
+draw_text_transformed(x - 470, y - 100, "In this work-in-progress edition, you can venture into the school", 1, 1, 0);
+draw_text_transformed(x - 470, y - 50, "through the door above to fight monsters and earn resources using", 1, 1, 0);
+draw_text_transformed(x - 470, y, "alkali metals,  gasses, and acid compounds.", 1, 1, 0);
+
+draw_text_transformed(x - 470, y + 100, "Interact with the Periodic Table chart in the top left to", 1, 1, 0);
+draw_text_transformed(x - 470, y + 150, "unlock new elements and compounds and learn about them!", 1, 1, 0);
+
+draw_text_transformed(x - 470, y + 250, "Have fun!  (press \"Escape\")", 1, 1, 0);

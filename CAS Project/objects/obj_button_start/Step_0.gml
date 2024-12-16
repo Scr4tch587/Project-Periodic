@@ -72,7 +72,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.hcl_unlocked = ini_read_real("Save","HCl", 0);
 			global.h2so4_unlocked = ini_read_real("Save","H2SO4", 0);
 			global.hno3_unlocked = ini_read_real("Save","HNO3", 0);
-			global.hf_unlocked = ini_read_real("Save","HF", 0);
+			global.hf_unlocked = ini_read_real("Save","HF", 1);
 
 			ini_close(); 
 			

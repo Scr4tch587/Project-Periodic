@@ -77,4 +77,5 @@ switch_weapon();
 //increment cooldown to shoot variable
 _shootcd += 1
 _gascd += 1
+_swipecd += 1
 global.mana += 0.001

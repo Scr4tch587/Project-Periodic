@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"weapon_swipe",
   "isCompatibility":false,
   "isDnD":false,

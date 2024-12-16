@@ -345,6 +345,7 @@
     {"id":{"name":"spr_well_done_banner","path":"sprites/spr_well_done_banner/spr_well_done_banner.yy",},},
     {"id":{"name":"spr_xpbar_back","path":"sprites/spr_xpbar_back/spr_xpbar_back.yy",},},
     {"id":{"name":"spr_xpbar_fill","path":"sprites/spr_xpbar_fill/spr_xpbar_fill.yy",},},
+    {"id":{"name":"spr_yellow_button","path":"sprites/spr_yellow_button/spr_yellow_button.yy",},},
     {"id":{"name":"Sprite110","path":"sprites/Sprite110/Sprite110.yy",},},
     {"id":{"name":"Sprite112","path":"sprites/Sprite112/Sprite112.yy",},},
     {"id":{"name":"the_goddamn_floor","path":"sprites/the_goddamn_floor/the_goddamn_floor.yy",},},

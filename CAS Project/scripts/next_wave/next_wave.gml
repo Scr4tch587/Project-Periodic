@@ -2,16 +2,6 @@
 function next_wave() 
 {	
 	global.level += 1;
-	if (global.level == 5) {
-		if (!global.hf_unlocked) {
-			global.paused = true;
-			hf_unlock()
-		}
-		ini_open("save_file.ini"); 
-
-		ini_close();
-	}
-	
 	if (global.level == 20) {
 		global.paused = true; 
 		end_game()

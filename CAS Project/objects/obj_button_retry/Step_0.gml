@@ -31,6 +31,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 	
 			// Restart this room.
 			// Restarting the game.
+			obj_pause_button.has_released = false;
 			room_restart();
 		}
 	}
