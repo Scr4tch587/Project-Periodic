@@ -13,6 +13,6 @@ hitpoints_max = 7 * global.enemy_health_bonus;
 hitpoints = hitpoints_max;
 
 // Set sprites for this enemy type.
-walk_sprite = spr_pigun_walk;
-attack_sprite = spr_pigun_attack;
-hit_sprite = spr_pigun_hit;
+walk_sprite = spr_cat_walk;
+attack_sprite = spr_cat_attack;
+hit_sprite = spr_cat_hit;
