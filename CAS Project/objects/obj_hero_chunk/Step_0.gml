@@ -26,6 +26,9 @@ if (!global.paused)
 	}
 	if (collided = true)
 	{
+		if (transition_progress < 1) {
+		    transition_progress += transition_speed; // Gradually increase the progress
+		}
 		collidetimer += 1;
 		if (collidetimer >= explosiondelay){
 			instance_create_layer(x, y, "Instances", obj_hero_explosion);

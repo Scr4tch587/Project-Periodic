@@ -11,7 +11,7 @@ draw_set_colour(c_white);
 draw_set_alpha(1.0);
 
 // Draw game over banner.
-draw_sprite(spr_game_over_banner, 0, 1920 / 2, 1080 / 2);
+draw_sprite_ext(spr_game_over_banner, 0, 1920 / 2, 1080 / 2, 1.3, 1.3, 0, c_white, 1);
 
 // Set font.
 draw_set_font(fnt_large);
@@ -19,6 +19,3 @@ draw_set_font(fnt_large);
 // Align drawn text horizontally and vertically.
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-
-// Draw game over text.
-draw_text(1920 / 2, 1080 / 2, "GAME OVER");

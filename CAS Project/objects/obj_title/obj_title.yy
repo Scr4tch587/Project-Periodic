@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"TITLE",
-    "path":"sprites/TITLE/TITLE.yy",
+    "name":"new_title",
+    "path":"sprites/new_title/new_title.yy",
   },
   "spriteMaskId":null,
   "visible":true,

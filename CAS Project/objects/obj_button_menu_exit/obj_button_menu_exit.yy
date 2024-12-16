@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_exit",
+  "%Name":"obj_button_menu_exit",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,11 +9,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_exit",
+  "name":"obj_button_menu_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Over",
-    "path":"folders/Objects/Game/Game Over.yy",
+    "name":"Pause",
+    "path":"folders/Objects/Game/Pause.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_red_button",
-    "path":"sprites/spr_red_button/spr_red_button.yy",
+    "name":"spr_button_green",
+    "path":"sprites/spr_button_green/spr_button_green.yy",
   },
   "spriteMaskId":null,
   "visible":true,
