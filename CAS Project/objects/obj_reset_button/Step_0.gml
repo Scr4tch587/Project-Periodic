@@ -47,12 +47,12 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.h2so4_unlocked = 0;
 			global.hno3_unlocked = 0;
 			
-			global.br2_conc = 1;
-			global.cl2_conc = 1;
+			global.br2_conc = 0.5;
+			global.cl2_conc = 0.5;
 			global.br2_unlocked = 0;
 			global.cl2_unlocked = 0;
-			global.cocl2_conc = 1;
-			global.f2_conc = 1;
+			global.cocl2_conc = 0.5;
+			global.f2_conc = 0.5;
 			global.cocl2_unlocked = 0;
 			global.f2_unlocked = 0;
 			
@@ -76,13 +76,13 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			ini_write_real("Save", "HF_conc", 1);
 			ini_write_real("Save", "HNO3_conc", 1);
 			ini_write_real("Save", "H2SO4", 0);
-			ini_write_real("Save", "HCl", 0);
-			ini_write_real("Save", "HF", 1);
+			ini_write_real("Save", "HCl", 1);
+			ini_write_real("Save", "HF", 0);
 			ini_write_real("Save", "HNO3", 0);
-			ini_write_real("Save", "Br2_conc", 1);
-			ini_write_real("Save", "Cl2_conc", 1);
-			ini_write_real("Save", "COCl2_conc", 1);
-			ini_write_real("Save", "F2_conc", 1);
+			ini_write_real("Save", "Br2_conc", global.br2_conc);
+			ini_write_real("Save", "Cl2_conc", global.cl2_conc);
+			ini_write_real("Save", "COCl2_conc", global.cocl2_conc);
+			ini_write_real("Save", "F2_conc", global.f2_conc);
 			ini_write_real("Save", "Br2", 1);
 			ini_write_real("Save", "Cl2", 0);
 			ini_write_real("Save", "COCl2", 0);

@@ -48,8 +48,17 @@ if (ini_read_real("Save", global.selected, 0)) {
 		draw_text_transformed(x - 135, y - 120, "Gas", 0.85, 0.85, 0);
 		draw_text_transformed(x - 130, y - 64, "-", 2, 1, 0);
 		draw_text_transformed(x - 125, y - 8, "-", 2, 1, 0);
+		if (global.selected == "Br2") {
+			cloud_timer = 20;
+		} else if (global.selected == "Cl2") {
+			cloud_timer = 15;
+		} else if (global.selected == "F2") {
+			cloud_timer = 10;
+		} else if (global.selected == "COCl2") {
+			cloud_timer = 5;
+		}
 		draw_text_transformed(x - 10, y + 48,  string(ini_read_real("Save",global.selected + "_conc",0.5)) + "M", 0.85, 0.85, 0);
-		draw_text_transformed(x - 100, y + 104, string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)), 0.85, 0.85, 0);
+		draw_text_transformed(x - 100, y + 104, string(0.1 *  ini_read_real("Save",global.selected + "_conc",0.5) * 6 * 100 * 20 / cloud_timer) + " / s", 0.85, 0.85, 0);
 		if (global.selected == "Br2")  {
 			draw_text_transformed(x - 255, y + 215,  "A reddish-brown liquid at STP, it is the only nonmetallic", 0.4, 0.4, 0);
 			draw_text_transformed(x - 255, y + 245,  "element that is liquid under these conditions. It is used", 0.4, 0.4, 0);
@@ -76,7 +85,16 @@ if (ini_read_real("Save", global.selected, 0)) {
 		draw_text_transformed(x - 130, y - 64, "-", 2, 1, 0);
 		draw_text_transformed(x - 125, y - 8, "-", 2, 1, 0);
 		draw_text_transformed(x - 10, y + 48,  string(ini_read_real("Save",global.selected + "_conc",0.5)) + "M", 0.85, 0.85, 0);
-		draw_text_transformed(x - 100, y + 104, string(0.015 * 150 * 100 * ini_read_real("Save",global.selected + "_conc",0.5)), 0.85, 0.85, 0);
+		if (global.selected == "HCl") {
+			acid_timer = 60;
+		} else if (global.selected == "H2SO4") {
+			acid_timer = 45;
+		} else if (global.selected == "HNO3") {
+			acid_timer = 30;
+		} else if (global.selected == "HF") {
+			acid_timer = 15;
+		}
+		draw_text_transformed(x - 100, y + 104, string(150 * ini_read_real("Save",global.selected + "_conc",0.5) * 60/acid_timer) +  " / s", 0.85, 0.85, 0);
 		if (global.selected == "HF")  {
 			draw_text_transformed(x - 255, y + 215,  "A weak acid with strong corrosive properties, especially", 0.4, 0.4, 0);
 			draw_text_transformed(x - 255, y + 245,  "towards glass and silica. It is used in etching and industrial", 0.4, 0.4, 0);

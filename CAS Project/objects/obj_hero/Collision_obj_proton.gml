@@ -1,5 +1,5 @@
 // Increment experience.
-global.protons += 5;
+global.protons += 1;
 
 // Choose a random pickup sound effect.
 _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);

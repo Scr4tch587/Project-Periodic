@@ -1,7 +1,29 @@
 //cooldown variable for puddle attack
 _cooldown = 0;
+damage = 0.1;
+acid_damage = 0.1;
 //cooldown variable for gas attack
 cloudcd = 0;
+
+if (global.gas == "Br2") {
+	cloud_timer = 20;
+} else if (global.gas == "Cl2") {
+	cloud_timer = 15;
+} else if (global.gas == "F2") {
+	cloud_timer = 10;
+} else if (global.gas == "COCl2") {
+	cloud_timer = 5;
+}
+
+if (global.acid == "HCl") {
+	acid_timer = 60;
+} else if (global.acid == "H2SO4") {
+	acid_timer = 45;
+} else if (global.acid == "HNO3") {
+	acid_timer = 30;
+} else if (global.acid == "HF") {
+	acid_timer = 15;
+}
 // Create variable for max hitpoints.
 hitpoints_max = 2 * global.enemy_health_bonus;
 

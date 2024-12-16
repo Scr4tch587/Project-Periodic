@@ -2,6 +2,6 @@ if (global.paused == false){
 	lifetime++
 }
 
-if (lifetime >= 300){
+if (lifetime >= 150){
 	instance_destroy()
 }

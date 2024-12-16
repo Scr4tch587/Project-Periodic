@@ -24,11 +24,11 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		// If left mouse button is released...
 		if (mouse_check_button_released(mb_left))
 		{	
-			if (global.selected == "K" or global.selected == "HNO3" or global.selected == "Cl2") {
+			if (global.selected == "K" or global.selected == "H2SO4" or global.selected == "Cl2") {
 				global.cost = 20;
-			} else if (global.selected == "Rb" or global.selected == "H2SO4" or global.selected == "F2") {
+			} else if (global.selected == "Rb" or global.selected == "HNO3" or global.selected == "F2") {
 				global.cost = 30;
-			} else if (global.selected == "Cs" or global.selected == "HCl" or global.selected == "COCL2") {
+			} else if (global.selected == "Cs" or global.selected == "HF" or global.selected == "COCL2") {
 				global.cost = 40;
 			}
 

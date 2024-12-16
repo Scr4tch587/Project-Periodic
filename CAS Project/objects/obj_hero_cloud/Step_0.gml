@@ -3,31 +3,31 @@ if (!global.paused)
 	counter += 1;
 	if (counter > 30 and counter <= 60)
 	{
-		image_xscale = 1;
-		image_yscale = 1;
-		xscale = 1;
-		yscale = 1;
+		image_xscale = 0.5 + image_increment;
+		image_yscale = 0.5 + image_increment;
+		xscale = 0.5 + image_increment;
+		yscale = 0.5 + image_increment;
 	}
 	else if (counter > 60 and counter <= 120)
 	{
-		image_xscale = 1.5;
-		image_yscale = 1.5;
-		xscale = 1.5;
-		yscale = 1.5;
+		image_xscale = 0.5 + 2*image_increment;
+		image_yscale = 0.5 + 2*image_increment;
+		xscale = 0.5 + 2*image_increment;
+		yscale = 0.5 + 2*image_increment;
 	}
 	else if (counter > 120 and counter <= 240)
 	{
-		image_xscale = 2;
-		image_yscale = 2;
-		xscale = 2;
-		yscale = 2;
+		image_xscale = 0.5 + 3*image_increment;
+		image_yscale = 0.5 + 3*image_increment;
+		xscale = 0.5 + 3*image_increment;
+		yscale = 0.5 + 3*image_increment;
 	}
 	else if (counter > 240)
 	{
-		image_xscale = 2.5;
-		image_yscale = 2.5;
-		xscale = 2.5;
-		yscale = 2.5;
+		image_xscale = 0.5 + 4*image_increment;
+		image_yscale = 0.5 + 4*image_increment;
+		xscale = 0.5 + 4*image_increment;
+		yscale = 0.5 + 4*image_increment;
 	}
 	
 	if (counter >= 480){
