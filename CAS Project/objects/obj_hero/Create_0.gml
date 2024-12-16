@@ -14,7 +14,7 @@ nearest_distance = 1000;
 _shootcd = 240;
 _gascd = 240;
 _watercd = 10;
-_swipecd = 100;
+_swipecd = 60;
 hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
@@ -38,7 +38,7 @@ hero_shoot = function() {
 // Function for the swiping weapon
 hero_swipe = function()
 {
-	if (keyboard_check_pressed(vk_space) and _swipecd >= 100) {	
+	if (keyboard_check_pressed(vk_space) and _swipecd >= 60) {	
 		if (nearest_distance < 250) {	
 			swipe_attack(); // Execute the function to handle this weapon.
 			_swipecd = 0;

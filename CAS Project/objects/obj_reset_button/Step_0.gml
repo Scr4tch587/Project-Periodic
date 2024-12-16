@@ -32,11 +32,11 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			global.na_conc = 1;
 			global.k_conc = 1;
 			global.na_unlocked = 1;
-			global.k_unlocked = 0;
+			global.k_unlocked = 1;
 			global.rb_conc = 1;
 			global.cs_conc = 1;
-			global.rb_unlocked = 0;
-			global.cs_unlocked = 0;
+			global.rb_unlocked = 1;
+			global.cs_unlocked = 1;
 			
 			global.hf_conc = 1;
 			global.hcl_conc = 1;
@@ -68,9 +68,9 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 			ini_write_real("Save", "Rb_conc", 1);
 			ini_write_real("Save", "Cs_conc", 1);
 			ini_write_real("Save", "Na", 1);
-			ini_write_real("Save", "K", 0);
-			ini_write_real("Save", "Rb", 0);
-			ini_write_real("Save", "Cs", 0);
+			ini_write_real("Save", "K", 1);
+			ini_write_real("Save", "Rb", 1);
+			ini_write_real("Save", "Cs", 1);
 			ini_write_real("Save", "H2SO4_conc", 1);
 			ini_write_real("Save", "HCl_conc", 1);
 			ini_write_real("Save", "HF_conc", 1);
