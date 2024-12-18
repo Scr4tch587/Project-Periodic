@@ -19,6 +19,9 @@ hero_shoot_cooldown = 30 * (1 / 60);
 hero_swipe_cooldown = 30 * (1 / 60);
 hero_trail_cooldown = 30 * (1 / 60);
 global.chunk = ds_map_create();
+global.chunks =  "Na";
+global.acid =  "HCl";
+global.gas =  "Br2";
 
 // Function for the shooting weapon.
 hero_shoot = function() {

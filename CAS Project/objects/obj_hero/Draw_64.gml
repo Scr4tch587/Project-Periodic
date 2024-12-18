@@ -95,9 +95,8 @@ draw_sprite(spr_item_slot, !global.chunk[? "unlocked"], 50, 880);
 draw_sprite_ext(spr_chunk_icon, !global.chunk[? "unlocked"], 124, 950, 0.380, 0.380, 0, c_white, 1);
 
 draw_set_halign(fa_left);
-draw_text(170, 575, "HCl");
-draw_text(170, 735, "Cl");
-draw_text_transformed(200, 750, "2", 0.5, 0.5, 0);
+draw_text(170, 575, global.acid);
+draw_text(170, 735, global.gas);
 draw_text(170, 895, global.chunks);
 
 // If the left mouse button is NOT pressed...

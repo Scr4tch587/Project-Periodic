@@ -4,6 +4,10 @@ global.selected = " ";
 global.type = " ";
 
 ini_open("save_file.ini"); 
-global.hf_unlocked = true;
-ini_write_string("Save", "HF" ,global.hf_unlocked);
+global.br2_unlocked = 1;
+global.hcl_unlocked = 1;
+global.na_unlocked = 1;
+ini_write_string("Save", "HCl" ,global.hcl_unlocked);
+ini_write_string("Save", "Br2" ,global.br2_unlocked);
+ini_write_string("Save", "Na" ,global.na_unlocked);
 ini_close();
