@@ -3,6 +3,14 @@
 // top to bottom.
 depth = -y;
 
+
+if (speed < max_speed) {
+    speed += acceleration; // Increase speed
+    if (speed > max_speed) {
+        speed = max_speed; // Cap speed at max_speed
+    }
+}
+
 // Set direction towards the hero.
 direction = point_direction(x, y, obj_hero.x, obj_hero.y);
 

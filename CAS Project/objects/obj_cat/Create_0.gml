@@ -1,13 +1,15 @@
 // Call parent event to set up general eney stuff.
 event_inherited();
 
-speed = 1;
+speed = 3;
+acceleration = 0.2; // Rate at which speed increases
+max_speed = 6; 
 
 // Set animation speed.
 image_speed = 1;
 
 // Set max hitpoints specifically for this enemy type.
-hitpoints_max = 7 * global.enemy_health_bonus;
+hitpoints_max = 11 * global.enemy_health_bonus;
 
 // Set hitpoints specifically for this enemy type.
 hitpoints = hitpoints_max;

@@ -107,6 +107,13 @@ spawn_enemy = function()
 		// pigun, pumpkill or rooster.
 		_enemy = choose(obj_cat, obj_book, obj_green_monster);
 	}
+	
+	if (global.level > 10)
+	{
+		// Change the enemy type to either
+		// pigun, pumpkill or rooster.
+		_enemy = choose(obj_cat, obj_book, obj_green_monster, obj_green_monster, obj_green_monster);
+	}
 
 	// We want to spawn enemyes around the player.
 	// So we first get a random direction (0 to 360).
