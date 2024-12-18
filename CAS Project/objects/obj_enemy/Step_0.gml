@@ -22,4 +22,5 @@ if (!global.paused)
 {
 	_cooldown += 1;
 	cloudcd += 1;
+	lasthit += 1;
 }
