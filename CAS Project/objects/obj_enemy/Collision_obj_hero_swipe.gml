@@ -1,6 +1,6 @@
 // If our hitpoints is over 0,
 // AND we are not currently being hit.
-if (hitpoints > 0 && sprite_index != hit_sprite)
+if (hitpoints > 0 && lasthit >= 30)
 {
 	// Choose a random hit sound effect.
 	_sound = choose(snd_melee_hit_1, snd_melee_hit_2, snd_melee_hit_3);
@@ -23,7 +23,7 @@ if (hitpoints > 0 && sprite_index != hit_sprite)
 	// Set sprite to hit sprite.
 	sprite_index = hit_sprite;
 	image_index = 0;
-
+	lasthit = 0;
 	// If hitpoints has reached zero...
 	if (hitpoints <= 0)
 	{

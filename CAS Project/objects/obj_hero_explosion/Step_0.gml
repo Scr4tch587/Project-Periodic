@@ -1,9 +1,7 @@
 if (!global.paused)
 {
-	if (lifetime <= 0)
-	{
-		instance_destroy()
+	if image_index >= image_number - 1 {
+	    // Destroy the instance
+	    instance_destroy();
 	}
-	lifetime -= 1;
-	
 }

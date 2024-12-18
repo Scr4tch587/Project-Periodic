@@ -2,6 +2,7 @@
 _cooldown = 0;
 damage = 0.1;
 acid_damage = 0.1;
+lasthit = 30;
 //cooldown variable for gas attack
 cloudcd = 0;
 
