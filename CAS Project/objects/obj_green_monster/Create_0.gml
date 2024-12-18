@@ -7,6 +7,7 @@ speed = 2;
 // Set animation speed.
 image_speed = 1;
 
+hitpoints_max = 15 * global.enemy_health_bonus;
 // Set sprites for this enemy type.
 walk_sprite = spr_green_walk;
 attack_sprite = spr_green_attack;

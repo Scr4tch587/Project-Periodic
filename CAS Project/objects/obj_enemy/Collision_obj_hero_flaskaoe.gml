@@ -9,8 +9,8 @@ if (hitpoints > 0 and _cooldown >= acid_timer and global.paused == false)
 
 	// Reduce hitpoints by the damage caused by the shooting weapon.
 	ini_open("save_file.ini")
-	acid_damage = ini_read_real("Save",global.acid + "_conc",0.5)^2
-	acid_damage = 0.45 * acid_damage;
+	acid_damage = ini_read_real("Save",global.acid + "_conc", 0.5)^2
+	acid_damage = 0.20 * acid_damage;
 	ini_close();
 	hitpoints -= acid_damage;
 

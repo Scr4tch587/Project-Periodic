@@ -13,6 +13,8 @@ if (global.gas == "Br2") {
 	cloud_timer = 10;
 } else if (global.gas == "COCl2") {
 	cloud_timer = 5;
+} else {
+	cloud_timer = 20;
 }
 
 if (global.acid == "HCl") {

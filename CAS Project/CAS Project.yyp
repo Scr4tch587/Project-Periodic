@@ -118,6 +118,7 @@
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_concentration_button","path":"objects/obj_concentration_button/obj_concentration_button.yy",},},
     {"id":{"name":"obj_continue_button","path":"objects/obj_continue_button/obj_continue_button.yy",},},
+    {"id":{"name":"obj_controls","path":"objects/obj_controls/obj_controls.yy",},},
     {"id":{"name":"obj_cs_button","path":"objects/obj_cs_button/obj_cs_button.yy",},},
     {"id":{"name":"obj_dialogue_screen","path":"objects/obj_dialogue_screen/obj_dialogue_screen.yy",},},
     {"id":{"name":"obj_dynamic_screen","path":"objects/obj_dynamic_screen/obj_dynamic_screen.yy",},},

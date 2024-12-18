@@ -18,10 +18,9 @@ if (hitpoints > 0)
 	// Reduce hitpoints by the damage caused by the shooting weapon.
 	ini_open("save_file.ini")
 	acid_damage = ini_read_real("Save",global.acid + "_conc",0.5)^2
-	acid_damage = 0.45 * acid_damage;
+	acid_damage = 0.20 * acid_damage;
 	ini_close();
 	hitpoints -= acid_damage;
-
 	// Create text popup to indicate damage.
 	var _text = instance_create_layer(x + 0, y + 0, "UpgradeScreen", obj_text_popup);
 
