@@ -4,6 +4,7 @@ damage = 0.1;
 acid_damage = 0.1;
 //cooldown variable for gas attack
 cloudcd = 0;
+lasthit = 40;
 
 if (global.gas == "Br2") {
 	cloud_timer = 20;
