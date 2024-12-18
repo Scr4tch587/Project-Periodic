@@ -13,4 +13,4 @@ draw_set_colour(c_black);
 draw_set_alpha(1);
 
 // Draw resume title text.
-draw_text_transformed(x, y + 20, "RESUME", image_xscale, image_yscale, image_angle);
+draw_text_transformed(x, y + 10, "SKIP WAVE", image_xscale, image_yscale, image_angle);
