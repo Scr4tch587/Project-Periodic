@@ -94,7 +94,7 @@ if (ini_read_real("Save", global.selected, 0)) {
 		} else if (global.selected == "HF") {
 			acid_timer = 15;
 		}
-		draw_text_transformed(x - 100, y + 104, string(150 * ini_read_real("Save",global.selected + "_conc",0.5) * 60/acid_timer) +  " / s", 0.85, 0.85, 0);
+		draw_text_transformed(x - 100, y + 104, string(1.5 * 75 * ini_read_real("Save",global.selected + "_conc",0.5) * 60/acid_timer) +  " / s", 0.85, 0.85, 0);
 		if (global.selected == "HF")  {
 			draw_text_transformed(x - 255, y + 215,  "A weak acid with strong corrosive properties, especially", 0.4, 0.4, 0);
 			draw_text_transformed(x - 255, y + 245,  "towards glass and silica. It is used in etching and industrial", 0.4, 0.4, 0);

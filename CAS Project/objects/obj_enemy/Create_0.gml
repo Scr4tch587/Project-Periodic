@@ -23,6 +23,8 @@ if (global.acid == "HCl") {
 	acid_timer = 30;
 } else if (global.acid == "HF") {
 	acid_timer = 15;
+} else {
+	acid_timer = 60;
 }
 // Create variable for max hitpoints.
 hitpoints_max = 2 * global.enemy_health_bonus;
