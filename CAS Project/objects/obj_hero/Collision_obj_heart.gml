@@ -1,5 +1,13 @@
 // Adds two hitpoints as long as its not over max.
-hitpoints = min(hitpoints + 2, hitpoints_max);
+if (global.level < 3) {
+	hitpoints = min(hitpoints + 2, hitpoints_max);
+} else if (global.level < 6)  {
+	hitpoints = min(hitpoints + 4, hitpoints_max);
+} else if (global.level < 10) {
+	hitpoints = min(hitpoints + 6, hitpoints_max);
+} else {
+	hitpoints = min(hitpoints + 10, hitpoints_max);
+}
 
 // Chooses sound effect.
 _sound = choose(snd_pickup_1, snd_pickup_2, snd_pickup_3);

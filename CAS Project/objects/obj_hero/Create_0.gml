@@ -28,8 +28,8 @@ hero_shoot = function() {
 	if (mouse_check_button_pressed(mb_left) and _shootcd >= 240) {	
 		if (nearest_distance < 1000) {	
 			if (global.shooting[? "unlocked"]) {	
-				if (global.mana >= 5) {
-					global.mana -= 5;
+				if (global.mana >= 3) {
+					global.mana -= 3;
 					shooting_attack(); // Execute the function to handle this weapon.
 					_shootcd = 0;
 				}
@@ -56,8 +56,8 @@ hero_gas = function()
 	{
 			if (global.trail[? "unlocked"])
 			{	
-				if (global.mana >= 5) {
-					global.mana -= 5;
+				if (global.mana >= 3) {
+					global.mana -= 3;
 					gas_attack();
 					// Execute the function to handle this weapon.
 				}
@@ -70,8 +70,8 @@ hero_chunk = function()
 	if (mouse_check_button_pressed(mb_left))
 	{	
 		if (global.chunk[? "unlocked"]) {
-			if (global.mana >= 5) {
-				global.mana -= 5;
+			if (global.mana >= 3) {
+				global.mana -= 3;
 				chunk_attack();
 			}
 		}

@@ -37,10 +37,10 @@ if (!global.paused)
 				ifdamage = false;
 				var distance = point_distance(x, y, currentx, currenty);
 	
-				if (distance <= 150){
+				if (distance <= 200){
 					ifdamage = true;
 					ini_open("save_file.ini");
-					damage = 0.015*(150-distance)*ini_read_real("Save", global.selected + "_conc", 1);
+					damage = 0.015*(200-distance)*ini_read_real("Save", global.selected + "_conc", 1);
 		
 				}
 	

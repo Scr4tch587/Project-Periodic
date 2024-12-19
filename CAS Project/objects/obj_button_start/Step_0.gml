@@ -33,10 +33,19 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 
 			ini_write_real("Save", "HF", 0);
 	
-			global.coins = ini_read_real("Save","coins",0);
-			global.electrons = ini_read_real("Save","electrons",0);
-			global.protons = ini_read_real("Save","neutrons",0);
-			global.neutrons = ini_read_real("Save","protons",0);
+			//global.coins = ini_read_real("Save","coins",0);
+			//global.electrons = ini_read_real("Save","electrons",0);
+			//global.protons = ini_read_real("Save","neutrons",0);
+			//global.neutrons = ini_read_real("Save","protons",0);
+			global.coins = 0;
+			global.electrons = 0;
+			global.protons = 0;
+			global.neutrons = 0;
+			
+			ini_write_real("Save", "coins", global.coins);
+			ini_write_real("Save", "electrons", global.electrons);
+			ini_write_real("Save", "protons", global.protons);
+			ini_write_real("Save", "neutrons", global.neutrons);
 			
 			global.chunks = ini_read_string("Save","chunks", "Na");
 			

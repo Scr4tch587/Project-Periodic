@@ -2,8 +2,8 @@
 event_inherited();
 
 speed = 3;
-acceleration = 0.2; // Rate at which speed increases
-max_speed = 6; 
+acceleration = 0.05; // Rate at which speed increases
+max_speed = 4.5; 
 
 // Set animation speed.
 image_speed = 1;
