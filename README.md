@@ -9,6 +9,8 @@ The concept was a wave-based survival game where players dispose of hordes of en
 
 Due to the intense stress of IB, we never finished the game beyond a primitive, demo state, but it is technically playable. 
 
+Find some screenshots of the game below!
+
 General Engine (progression, level system, lobby): [Kai Zhang](https://github.com/Scr4tch587)
 
 Chemical Design: [Kyle Su](https://github.com/kyle-su1)
@@ -18,8 +20,6 @@ Enemy Design: [Anthony Hou](https://github.com/leafycarrot)
 All Graphics: [Kevin Zhu](https://github.com/kevinzhu11111)
 
 ## Developed in GameMaker with GameMakerLanguage
-
-See some screenshots of the game below!
 
 # Gallary
 
