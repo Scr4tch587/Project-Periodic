@@ -19,7 +19,7 @@ Enemy Design: [Anthony Hou](https://github.com/leafycarrot)
 
 All Graphics: [Kevin Zhu](https://github.com/kevinzhu11111)
 
-## Developed in GameMaker with GameMakerLanguage
+**Developed in GameMaker with GameMakerLanguage**
 
 # Gallary
 
